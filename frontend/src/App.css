@@ -10,6 +10,7 @@
 
 body{
   min-height: 100vh;
+  max-height: 100%;
   background: url('src/assets/Background.jpg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,3 +44,8 @@ body{
   font-weight: 500;
   margin-left: 1.7rem; 
 }
+
+.services{
+  padding:  19.6% 0;
+}
+
