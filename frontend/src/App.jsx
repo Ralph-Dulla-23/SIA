@@ -29,9 +29,34 @@ function App() {
       </div>
       <div className='content2'>
       <section className="Services">
-          <h1 id="Services">Services</h1>
-          <h2>hello</h2>
-      </section></div>
+        <div className="servicetitle">
+           <h1 id="Services">Services</h1>
+           <div className="bigcircle">
+           <div className="smallcircle"></div></div>
+        </div>
+
+          <div className="bluebox">
+            <div className="left">
+              <h4>19/Kilo</h4>
+               <p> Wash n' dry <br></br>
+                and fold</p>
+                <h4>19/kilo</h4>
+                <p>Hand <br /> Wash</p>
+            </div>
+             <div className="right">
+              <h4>19Kilo</h4>
+             <p>Wash n' dry <br />
+                and press</p>
+                <h4>19Kilo</h4>
+             <p>Dry and <br />Fold</p>
+                
+                
+                
+             </div>
+                
+          </div>
+      </section>
+      </div>
     </>
   )
 }

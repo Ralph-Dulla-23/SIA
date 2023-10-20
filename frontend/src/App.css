@@ -8,13 +8,13 @@
   font-family: 'Poppins', sans-serif;;
 }
 
-body{
+.Content1{
   min-height: 100vh;
-  max-height: 100%;
   background: url('src/assets/Background.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 
 .header{
   position: fixed;
@@ -23,11 +23,12 @@ body{
   width: 100%;
   padding: 1.3rem 10%;
   background: rgba(0, 0, 0, .1);
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  position: fixed;
 }
 
 .logo{
@@ -35,6 +36,7 @@ body{
   color: white;
   text-decoration: none;
   font-weight: 700;
+  
 }
 
 .navbar a{
@@ -43,9 +45,70 @@ body{
   text-decoration: none;
   font-weight: 500;
   margin-left: 1.7rem; 
+  color: white;
+  text-shadow: 1px 2px 4px black;
 }
 
-.services{
-  padding:  19.6% 0;
+.content2{
+  margin: 0px auto 10% auto;
 }
 
+.bluebox{
+  height: 450px;
+  width: 770px;
+  border-radius: 60px;
+  background-color: #28a2fa;
+  margin: 100px 100px 20px 7%;
+  padding: 55px 100px;
+  font-size: 1.15rem;
+}
+
+.bluebox p{
+  font-style: normal;
+  font-size: 1.95rem;
+  color: white;
+}
+
+.left{
+  float: left;
+  margin: 0px 0 0 30px;
+}
+.right{
+  float: right;
+  margin: 0px 10px 0 0px;
+}
+
+.left p{
+  margin-bottom: 100px;
+}
+
+.right P{
+  margin-bottom: 100px;
+}
+
+.servicetitle{
+  float: right;
+  padding: 200px 200px;
+  color: white;
+  font-size: 20px;
+}
+
+.bigcircle{
+  height: 200px;
+  width: 200px;
+  margin: -150px 0px;
+  background-color: rgb(79, 126, 235);
+  border-radius: 50%;
+  float: right;
+  color: aliceblue;
+}
+
+.smallcircle{
+  height: 140px;
+  width: 140px;
+  margin:  100px 130px;
+  background-color: rgb(69, 187, 220);
+  border-radius: 50%;
+  float: right;
+  color: aliceblue;
+}
