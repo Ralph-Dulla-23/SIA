@@ -206,16 +206,22 @@
 }
 
 .content3{
-  padding: 10px 10px;
+  padding: 10px 0px;
   
 }
 
-.Faqs h1{
-  font-size: 60px;
+.faqs h1{
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.p-accordion{
+  width: 60%;
+  margin: 100px auto;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
-AccordionTab{
-  
+.p-accordion-header{
+ font-size: 40px;
 }
