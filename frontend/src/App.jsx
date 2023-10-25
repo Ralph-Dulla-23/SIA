@@ -5,9 +5,7 @@ import './App.css'
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import LocalLaundryServiceIcon from '@mui/icons-material/LocalLaundryService';
-import SoapIcon from '@mui/icons-material/Soap';
-import DryCleaningIcon from '@mui/icons-material/DryCleaning';
+
 import { Accordion, AccordionTab } from 'primereact/accordion';
         
 
@@ -36,37 +34,7 @@ function App() {
         </header>
        
       </div>
-      <div className='content2'>
-      <section className="Services">
-        <div className="servicetitle">
-           <h1 id="Services">Services</h1>
-           <div className="bigcircle">
-           <div className="smallcircle">
-           <div className="small2"></div></div></div>
-        </div>
-
-          <div className="bluebox"> 
-            <div className="left">
-              <div className="logo1">
-           
-              <h4>19/Kilo</h4>
-               <p> Wash n' dry <br></br>
-                and fold</p>
-           
-                <h4>19/kilo</h4>
-                <p>Hand <br /> Wash</p>
-                </div>
-            </div>
-             <div className="right">
-              <h4>19Kilo</h4>
-             <p>Wash n' dry <br />
-                and press</p>
-
-                <h4>19Kilo</h4>
-             <p>Dry and <br />Fold</p>
-             </div>
-          </div>
-
+      
           <div className="content3">
             <div className="aboutT">
               <h1 id="AboutT">About</h1>
@@ -82,8 +50,8 @@ function App() {
               With that aspiration, VSP Laundry Shop was born.</p>
           </div>
           
-      </section>
-      </div>
+      
+      
       <div className="content3">
           
 
