@@ -1,96 +1,123 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import 'primereact/resources/themes/saga-blue/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
-
-import { Accordion, AccordionTab } from 'primereact/accordion';
+import { Menubar } from 'primereact/menubar';
+import { Card } from 'primereact/card';
+import {useNavigate} from 'react-router-dom';
         
-
-
-import { Fieldset } from 'primereact/fieldset';
+import { Button } from 'primereact/button';
         
 
 
 function App() {
-  return (
-    <>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
-      <div className='Content1'>
-        <header className="header">
-          <a className='logo'>VSP Laundry Shop</a>
+  const navigate = useNavigate();
 
-          <label htmlFor="" className="icons"><i class="fa fa-bars" aria-hidden="true"></i></label>
-        <div>
-          <nav className='navbar'>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICES</a>
-            <a href="#">INQUIRY</a>
-            <a href="#">ACCOUNT</a>
-          </nav> </div>
-        </header>
-       
-      </div>
-      
-          <div className="content3">
-            <div className="aboutT">
-              <h1 id="AboutT">About</h1>
-            <div className="bigcircle1">
-           <div className="smallcircle1">
-           <div className="small3"></div></div></div>
-            </div>
+  const handleHomeClick = () => navigate('/');
+  const handleServicesClick = () => ('/Services');
+  const handleLoginClick = () => navigate('/Login');
 
-            <p>VSP Laundry Shop was founded in [Year] by a group of laundry enthusiasts who shared a 
+  const items = [
+    {
+      label: <div className='navtext' onClick={handleHomeClick}>HOME</div>,
+      icon: 'pi pi-fw pi-home',
+    },
+    {
+      label: <div className='navtext' onClick={handleServicesClick}>SERVICES</div>,
+      icon: 'pi pi-fw pi-info-circle',
+    },
+    {
+      label: <div className='navtext' >INQUIRY</div>,
+      icon: 'pi pi-fw pi-question-circle',
+    },
+    {
+      label: <div className='navtext' onClick={handleLoginClick}>LOGIN</div>,
+      icon: 'pi pi-fw pi-sign-in',
+    }
+  ];
+const start = <h1>VSP LAUNDRY SHOP</h1>;
+
+const logo = <>
+  <h1>VSPLAUNDRY SHOP</h1>
+</>
+
+return (
+  <>
+  <div className="Content1">
+    <Menubar className="navbar" model={items} start={start} /> 
+          <div className="card"> 
+          <Button label="Login" onClick={handleHomeClick}> </Button>
+          <Card className="title" >
+            <h1>Wash Your Stress Away!</h1>
+          <p className="m-0">
+          Wash your stress away, one load at a time, 
+              because every laundry day is a fresh start.
+          </p>
+        </Card>
+        <div className="wave" >
+          
+          </div>
+        </div>
+  </div>
+
+  <div className="content2">
+
+    <div className="info">
+    <Card className='infocard'>
+      <h1>About</h1>
+    <p className="m-1">
+    VSP Laundry Shop was founded in [Year] by a group of laundry enthusiasts who shared a 
               common vision: to provide a comprehensive and customer-centric laundry experience. 
               Their passion for laundry stemmed from the belief that doing laundry should be easy, efficient, 
               and accessible to everyone. 
-              With that aspiration, VSP Laundry Shop was born.</p>
-          </div>
-          
+              With that aspiration, VSP Laundry Shop was born.
+    </p>
+    </Card>
+      </div>
+      <div className="rightcard">
+        <div className="rightcard2"></div>
+        </div>
+  </div>
+ 
       
-      
-      <div className="content3">
-          
+  <div className="content3">
+    <div className="wave2"/> 
+    <div className="faq">
+      <h1>Faqs</h1>
+      <Card className="field" title="What are the services you offer?">
+    <p className="m-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+        numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+    </p>
+      </Card>
+      <br />
+      <Card className="field" title="What kind of items do you cater for washing?">
+          <p className="m-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+          </p>
+      </Card>
+      <br />
+      <Card className="field" title="What are your opening hours?">
+          <p className="m-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+          </p>
+      </Card>
+      <br />
+      <Card className="field" title="How many days will I receive my items back?">
+          <p className="m-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+          </p>
+      </Card>
+    </div> 
+   
+  </div> <div className="lastwave">
+      </div>
 
-          <div className="faqs">
-            <h1>FAQs</h1>
-
-            <Accordion activeIndex={0}>
-    <AccordionTab header="Header I">
-        <p className="m-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </AccordionTab>
-    <AccordionTab header="Header II">
-        <p className="m-0">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-            Consectetur, adipisci velit, sed quia non numquam eius modi.
-        </p>
-    </AccordionTab>
-    <AccordionTab header="Header III">
-        <p className="m-0">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-            quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-            mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-        </p>
-    </AccordionTab>
-</Accordion>
-
-            <div className="info">
-            <h2>Phone Number: 09203982039</h2>
-            <h2>Location: Quezon Street, Panabo City, Davao Region, 8105</h2>
-          </div>
-          </div>
-          </div>
+      <div className="footnote">
+        <h1>Vsp Laundry Shop</h1>
+          <h2>Quezon Street, Panabo City, Davao Region, 8105</h2>
+          <h2>Contact Number na wala ko kabalo</h2>
+      </div>
     </>
   )
 }

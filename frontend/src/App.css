@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
 @import url(https://db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=Noyh+R+W01+Medium);
 
 *{
   margin: 0;
-  padding: 0;
   box-sizing: border-box; 
   
 }
@@ -14,119 +13,194 @@
   background: url('src/assets/Background.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
-
-
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
+.wave{
+  content: '';
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  padding: 1.3rem 10%;
-  background: rgba(0, 0, 0, .1);
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  position: fixed;
-  font-family: 'Poppins', sans-serif;
-}
-
-.logo{
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
+  height: 120px;
+  background: url('src/assets/wave2.png') no-repeat;
   
 }
 
-.navbar a{
+.m-0{
+  font-size: 40px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: black 1px;
+  text-shadow: 0px 1px 3px gray;
+}
+
+.title{
+  font-family: "Noyh R W01 Medium";
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  padding: 20px 40px;
+  text-shadow: 0px 1px 2px gray;
+}
+
+
+.title{
+  height: 510px;
+  width: 750px;
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(10px);
+  margin: 150px 250px;
+  border-radius: 50px;
+  box-shadow: none;
+}
+
+.navbar{
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  font-family: "Noyh R W01 Medium";
+  justify-content: space-around;
+}
+
+.p-menubar{
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  
+  
+}
+
+.navtext{
   font-size: 1.15rem;
-  color: white;
+  ;
   text-decoration: none;
   font-weight: 500;
   margin-left: 1.7rem; 
-  color: white;
-  text-shadow: 1px 2px 4px black;
+  color: rgb(0, 0, 0);
+  
+  float: right;
 }
+/* content2 */
 
-.content3{
-  margin: 0px auto 10% auto;
+
+
+.content2{
+  margin: 0px auto 7% auto;
   font-family: "Noyh R W01 Medium";
+  display: flex;
+}
+
+.infocard{
+  height: 60px;
+  width: 650px;
+  /* background-color: rgb(82, 173, 254); */
+  color: black;
+  margin: 150px 250px;
+  border-radius: 50px;
+  box-shadow: none;
+  font-family: "Noyh R W01 Medium";
+}
+
+.infocard h1{
+  text-align: center;
+  font-size: 60px;
+}
+.m-1{
+  padding: 40px 40px;
+  text-align: justify;
+  font-size: 35px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.rightcard{
+  align-items: right;
+  background: url('src/assets/card1.png') no-repeat;
+  width: 100%;
+  margin-top: 150px;
   
 }
-
-.aboutT{
-  float: left;
-  padding: 200px 200px;
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  margin: 100px 100px;
+.rightcard2{
+  background: url('src/assets/card2.png') no-repeat;
+  margin-left: 10px;
+  height: 100vh;
+  margin: -50px 50px;
+ 
 }
 
-.content3 p{
-  justify-content: right;
-  font-size: 30px;
-  padding: 260px 200px 10px 0px;
-  text-align: justify;
-  text-justify: inter-word;
+.wave2{
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+  background: url('src/assets/bwave.png') no-repeat;
+  margin: -460px 0;
 }
 
-.bigcircle1{
-  height: 250px;
-  width: 250px;
-  margin: -180px -40px;
-  background-color: rgb(79, 126, 235);
-  border-radius: 50%;
-  float: left;
-  color: aliceblue;
-}
 
-.smallcircle1{
-  height: 170px;
-  width: 170px;
-  margin:  100px 130px;
-  background-color: rgb(69, 187, 220);
-  border-radius: 50%;
-  float: left;
-  color: aliceblue;
-}
 
-.small3{
-  height: 100px;
-  width: 100px;
-  background-color: rgb(129, 242, 250);
-  border-radius: 50%;
-  margin: 100px -50px;
-  float: left;
-}
 
-.info{
-  margin-top: 100px;
-  display: flex; 
-  gap: 30px;
-  justify-content: center;
-}
+
 
 .content3{
-  padding: 10px 0px;
-  
+  padding: 9% 0;
+  background-color: #38bdff;
+  font-family: "Noyh R W01 Medium";
 }
 
-.faqs h1{
-  font-size: 50px;
-  margin: 0 auto;
-}
-
-.p-accordion{
+.faq{
+  font-family: "Noyh R W01 Medium";
   width: 60%;
-  margin: 100px auto;
-  justify-content: center;
-  align-items: center;
+  padding: 20px 100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 850px;
+  width: 1000px;
+  background-color: aliceblue;
+  position: relative;
 }
 
-.p-accordion-header{
- font-size: 40px;
+.faq h1{
+  margin: 10px 10px;
+  text-align: center;
+  font-size: 60px;
+  padding: 10px 0;
 }
+
+.m-2{
+  font-size: 20px;
+  font-family: "Noyh R W01 Medium";
+}
+
+.m-3{
+  font-size: 20px;
+}
+
+.field{
+  border-radius: 20px;
+  font-family: "Noyh R W01 Medium";
+}
+
+.lastwave{
+  background: url('src/assets/lastwave.png') no-repeat;
+  height: 500px;
+  width: 100%;
+  margin-top: -500px;
+}
+
+.footnote{
+  background-color: #222fab;
+  padding: 50px;
+  text-align: center;
+  align-items: justify;
+  font-family: "Noyh R W01 Medium";
+  color: white;
+  margin-top: -60px;
+}
+
+.footnote h1{
+  margin-bottom: 10px;
+  font-size: 40px
+}
+
+.footnote h2{
+  font-weight: 200;
+}
+

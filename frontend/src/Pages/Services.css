@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
+@import url(https://db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=Noyh+R+W01+Medium);
+
+*{
+  margin: 0;
+  box-sizing: border-box; 
+  
+}
+
+.C1{
+  min-height: 100vh;
+  background: url('src/assets/Background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
