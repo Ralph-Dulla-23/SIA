@@ -51,27 +51,33 @@ function Login() {
     return(
     <>
       <div className="Content1">
-    <Menubar className="navbar" model={items} start={start} /> 
+        <Menubar className="navbar" model={items} start={start} />
 
-    <div className="credentials">
-     
-    <Card className='login'> 
-    <h1>Login</h1>
-    <div className="loginlabel">
-    <label className="username" htmlFor="username">Username</label>
-    <InputText id="username" aria-describedby="username-help" />
-    </div>
+        <div className="credentials">
 
+          <Card className='login'>
 
-    <div className="passwordlabel"> 
-    <label className="password" htmlFor="username">Password</label>
-    <Password id='password' value={value} onChange={(e) => setValue(e.target.value)} toggleMask />
-    </div>
-    </Card>
-  </div>
+            <h1>Login</h1>
+
+            <div className="loginlabel">
+              <label className="username" htmlFor="username">Username</label>            
+              <br />
+              <InputText id="username" aria-describedby="username-help" />
+            </div>
+
+            <div className="passwordlabel">
+              <label className="password" htmlFor="password">Password</label>
+              <br />
+              <Password inputStyle={{width: "100%",   height: "3.4rem", fontSize: "1.1rem"}} style={{width: "100%", height: "3.4rem", fontSize: "1.1rem"}} value={value} onChange={(e) => setValue(e.target.value)} feedback={false}
+              toggleMask />
+            </div>    
+
+          </Card>
+
+        </div>
 
         <div className="wave" />
-  </div>
+      </div>
 
  
      {/* <div className='content2' >
