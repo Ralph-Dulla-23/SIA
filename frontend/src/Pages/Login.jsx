@@ -1,7 +1,15 @@
-import './Login.css'
+import './Login.css';
+
+import { useState } from 'react';
 import { Menubar } from 'primereact/menubar';
+import { InputText } from 'primereact/inputtext';
 import { Card } from 'primereact/card';
+import { Password } from 'primereact/password';
+import { Button } from 'primereact/button';
 import {useNavigate} from 'react-router-dom';
+
+        
+
 
 function Login() {
   const navigate = useNavigate();
@@ -28,28 +36,66 @@ function Login() {
       icon: 'pi pi-fw pi-sign-in',
     }
   ];
+  const [value, setValue] = useState('');
+  const [nameValue, setName] = useState('');
+  const [passwordValue, setPassword] = useState('');
+      
     
     const start = <h1>VSP LAUNDRY SHOP</h1>;
     
-    const logo = <>
+    const logo = 
       <h1>VSPLAUNDRY SHOP</h1>
-    </>
-    
-    return (
-      <>
+
+
+      
+    return(
+    <>
       <div className="Content1">
-        <Menubar className="navbar" model={items} start={start} /> 
-              <div className="card"> 
+    <Menubar className="navbar" model={items} start={start} /> 
+
+    <div className="credentials">
+     
+    <Card className='login'> 
+    <h1>Login</h1>
+    <div className="loginlabel">
+    <label className="username" htmlFor="username">Username</label>
+    <InputText id="username" aria-describedby="username-help" />
+    </div>
+
+
+    <div className="passwordlabel"> 
+    <label className="password" htmlFor="username">Password</label>
+    <Password id='password' value={value} onChange={(e) => setValue(e.target.value)} toggleMask />
+    </div>
+    </Card>
+  </div>
+
+        <div className="wave" />
+  </div>
+
+ 
+     {/* <div className='content2' >
+            <Card className="behind-box-username"style={{ borderRadius: '20px' }}>
+                <div className="id-number-box">
+            <span className="p-float-label">
+                <InputText id="username-1" value={value} onChange={(e) => setValue(e.target.value)} />
+                <label htmlFor="username">ID number</label>
+            </span>
+        </div>
+        <div className="id-number-box">
             
-                </div>
+        </div>
+        <div className="password-box">
+            <Password value={passwordValue} onChange={(e) => setPassword(e.target.passwordValue)} toggleMask />
+        </div>
+        <Button id='signup-button' label="Login" severity="secondary" rounded />
+        
+
+            </Card>
+        </div> */}
 
 
-
-            <div className="wave" >
-              
-              
-            </div>
-      </div>
+    
     </>
     )
 }
