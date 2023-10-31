@@ -14,4 +14,54 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  font-family: "Noyh R W01 Medium";
 }
+
+.wave{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: url('src/assets/wave2.png') no-repeat;
+  
+}
+
+
+
+
+.Services{
+  display: flex;
+  gap: 50px;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.stitle{
+ margin: 30px 30px;
+  text-align: center;
+  font-size: 50px;
+ 
+}
+
+#card{
+  border-radius: 40px;
+  padding: 10px;
+  font-family: "Noyh R W01 Medium";
+  
+}
+
+#title{
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+}
+
+#card h2{
+  margin: 10px 0;
+}
+
+.card1{
+
+}
+

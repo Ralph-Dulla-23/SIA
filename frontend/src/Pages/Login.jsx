@@ -7,7 +7,7 @@ function Login() {
   const navigate = useNavigate();
 
   const handleHomeClick = () => navigate('/');
-  const handleServicesClick = () => ('/Services');
+  const handleServiceClick = () => navigate('/Services');
   const handleLoginClick = () => navigate('/Login');
 
   const items = [
@@ -16,7 +16,7 @@ function Login() {
       icon: 'pi pi-fw pi-home',
     },
     {
-      label: <div className='navtext' onClick={handleServicesClick}>SERVICES</div>,
+      label: <div className='navtext' onClick={handleServiceClick}>SERVICES</div>,
       icon: 'pi pi-fw pi-info-circle',
     },
     {
@@ -40,16 +40,14 @@ function Login() {
       <div className="Content1">
         <Menubar className="navbar" model={items} start={start} /> 
               <div className="card"> 
-              <Card className="title" >
-                <h1>Wash Your Stress Away!</h1>
-              <p className="m-0">
-              Wash your stress away, one load at a time, 
-                  because every laundry day is a fresh start.
-              </p>
-            </Card>
+            
+                </div>
+
+
+
             <div className="wave" >
               
-              </div>
+              
             </div>
       </div>
     </>

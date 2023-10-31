@@ -9,9 +9,8 @@ import { Button } from 'primereact/button';
 
 function App() {
   const navigate = useNavigate();
-
   const handleHomeClick = () => navigate('/');
-  const handleServicesClick = () => ('/Services');
+  const handleServiceClick = () => navigate('/Services');
   const handleLoginClick = () => navigate('/Login');
 
   const items = [
@@ -20,11 +19,11 @@ function App() {
       icon: 'pi pi-fw pi-home',
     },
     {
-      label: <div className='navtext' onClick={handleServicesClick}>SERVICES</div>,
+      label: <div className='navtext' onClick={handleServiceClick}>SERVICES</div>,
       icon: 'pi pi-fw pi-info-circle',
     },
     {
-      label: <div className='navtext' >INQUIRY</div>,
+      label: <div className='navtext' onClick={handleServiceClick}>INQUIRY</div>,
       icon: 'pi pi-fw pi-question-circle',
     },
     {
@@ -34,16 +33,13 @@ function App() {
   ];
 const start = <h1>VSP LAUNDRY SHOP</h1>;
 
-const logo = <>
-  <h1>VSPLAUNDRY SHOP</h1>
-</>
+
 
 return (
   <>
   <div className="Content1">
     <Menubar className="navbar" model={items} start={start} /> 
-          <div className="card"> 
-          <Button label="Login" onClick={handleHomeClick}> </Button>
+          <div className="card">
           <Card className="title" >
             <h1>Wash Your Stress Away!</h1>
           <p className="m-0">
