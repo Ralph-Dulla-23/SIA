@@ -17,6 +17,7 @@ function Login() {
   const handleHomeClick = () => navigate('/');
   const handleServiceClick = () => navigate('/Services');
   const handleLoginClick = () => navigate('/Login');
+  const handleSigninClick = () => navigate('/Signin');
 
   const items = [
     {
@@ -62,45 +63,36 @@ function Login() {
             <div className="loginlabel">
               <label className="username" htmlFor="username">Username</label>            
               <br />
-              <InputText id="username" aria-describedby="username-help" />
+              <InputText style={{fontFamily: "Noyh R W01 Medium"}} id="username" aria-describedby="username-help" />
             </div>
 
             <div className="passwordlabel">
               <label className="password" htmlFor="password">Password</label>
               <br />
-              <Password inputStyle={{width: "100%",   height: "3.4rem", fontSize: "1.1rem"}} style={{width: "100%", height: "3.4rem", fontSize: "1.1rem"}} value={value} onChange={(e) => setValue(e.target.value)} feedback={false}
+              <Password inputStyle={{width: "100%",   height: "3.4rem", fontSize: "1.1rem", fontFamily: "Noyh R W01 Medium"}} style={{width: "100%", height: "3.4rem", fontSize: "1.1rem"}} value={value} onChange={(e) => setValue(e.target.value)} feedback={false}
               toggleMask />
             </div>    
+
+            <div className="buttons">
+            <Button className='loginb'  label="Login" rounded />
+              
+             
+            <Button icon='pi pi-google' className='loginG'  label="Login with                        Google" rounded />
+           </div>
+          
+          <div className="signin">
+            <h3>
+              Dont have an account?  <a href='/Signin'>Signin</a>
+            </h3>
+           
+          </div>
 
           </Card>
 
         </div>
-
+        
         <div className="wave" />
       </div>
-
- 
-     {/* <div className='content2' >
-            <Card className="behind-box-username"style={{ borderRadius: '20px' }}>
-                <div className="id-number-box">
-            <span className="p-float-label">
-                <InputText id="username-1" value={value} onChange={(e) => setValue(e.target.value)} />
-                <label htmlFor="username">ID number</label>
-            </span>
-        </div>
-        <div className="id-number-box">
-            
-        </div>
-        <div className="password-box">
-            <Password value={passwordValue} onChange={(e) => setPassword(e.target.passwordValue)} toggleMask />
-        </div>
-        <Button id='signup-button' label="Login" severity="secondary" rounded />
-        
-
-            </Card>
-        </div> */}
-
-
     
     </>
     )
