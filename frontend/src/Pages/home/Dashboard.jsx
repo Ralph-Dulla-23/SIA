@@ -17,21 +17,49 @@ function Dashboard() {
   return (
 
     <>
-
-      <div className='C1'>
-
-        <NavBar />
-        <div className="card" style={{ padding: '1.4rem 2.1rem', backgroundColor: 'white', margin: '3.2rem 1rem' }}>
-          <DataTable header={header}>
-            <Column field="name" header="Job Order Number"></Column>
-            <Column field="price" header="Customer"></Column>
-            <Column field="category" header="Service"></Column>
-            <Column header="Status"></Column>
-          </DataTable>
-        </div>
-
+      <NavBar />
+      <div className="card" style={{ minWidth: '50rem', padding: '1.4rem 2.1rem' }}>
+        <DataTable header={header} tableStyle={{ minWidth: '50rem', padding: '1.4rem 2.1rem' }}>
+          <Column field="name" header="Job Order Number"></Column>
+          <Column field="price" header="Customer"></Column>
+          <Column field="category" header="Service"></Column>
+          <Column header="Status"></Column>
+        </DataTable>
       </div>
 
+      <div className="chatbox">
+
+   
+      <label for="click">
+      <i class="fab fa-facebook-messenger"></i>
+      <i class="pi pipi-times"></i>
+      </label>
+      <div class="wrapper">
+         <div class="head-text">
+            Let's chat? - Online
+         </div>
+         <div class="chat-box">
+            <div class="desc-text">
+               Please fill out the form below to start chatting with the next available agent.
+            </div>
+            <form action="#">
+               <div class="field">
+                 
+               </div>
+               <div class="field">
+
+               </div>
+               <div class="field textarea">
+                  <textarea cols="30" rows="10" placeholder="Explain your queries.." required></textarea>
+               </div>
+               <div class="field">
+                  <button type="submit">Start Chat</button>
+               </div>
+            </form>
+         </div>
+      </div>
+    </div>
+    
     </>
     
   )

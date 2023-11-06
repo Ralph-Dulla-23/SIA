@@ -2,6 +2,8 @@ import './App.css'
 import { Menubar } from 'primereact/menubar';
 import { Card } from 'primereact/card';
 import {useNavigate} from 'react-router-dom';
+import { useState } from 'react';
+import { InputTextarea } from 'primereact/inputtextarea';
         
 import { Button } from 'primereact/button';      
 
@@ -22,20 +24,19 @@ function App() {
       icon: 'pi pi-fw pi-info-circle',
     },
     {
-      label: <div className='navtext' onClick={handleServiceClick}>INQUIRY</div>,
-      icon: 'pi pi-fw pi-question-circle',
-    },
-    {
       label: <div className='navtext' onClick={handleLoginClick}>LOGIN</div>,
       icon: 'pi pi-fw pi-sign-in',
     }
   ];
 const start = <h1>VSP LAUNDRY SHOP</h1>;
-
+const [value, setValue] = useState('');
 
 
 return (
   <>
+  <div className="content">
+
+    
   <div className="Content1">
     <Menubar className="navbar" model={items} start={start} /> 
           <div className="card">
@@ -50,6 +51,34 @@ return (
           
           </div>
         </div>
+
+        <div className="is-sticky">
+
+<input type="checkbox" id="click" />
+   <label for="click">
+   <i className="pi pi-comment"></i>
+   <i className="pis pi-times"></i>
+   </label>
+   <div className="wrapper">
+      <div class="head-text">
+         Let's chat? - Online
+      </div>
+      <div className="chat-box">
+         <div className="desc-text">
+            Please fill out the form below to start chatting with the next available agent.
+         </div>
+         <form action="#">
+            <div className="field textarea">
+            <InputTextarea value={value} onChange={(e) => setValue(e.target.value)} rows={5} cols={30} placeholder="Explain your queries.." required/>
+            </div>
+            <div className="field">
+               <button type="submit">Start Chat</button>
+            </div>
+         </form>
+      </div>
+   </div>
+ </div>
+
   </div>
 
   <div className="content2">
@@ -114,6 +143,9 @@ return (
           <h2>Contact Number na wala ko kabalo</h2>
       </div>
 
+
+  
+  </div>
     </>
   )
 }

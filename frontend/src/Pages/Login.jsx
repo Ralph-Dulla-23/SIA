@@ -29,10 +29,6 @@ function Login() {
       icon: 'pi pi-fw pi-info-circle',
     },
     {
-      label: <div className='navtext' >INQUIRY</div>,
-      icon: 'pi pi-fw pi-question-circle',
-    },
-    {
       label: <div className='navtext' onClick={handleLoginClick}>LOGIN</div>,
       icon: 'pi pi-fw pi-sign-in',
     }
@@ -69,7 +65,10 @@ function Login() {
             <div className="passwordlabel">
               <label className="password" htmlFor="password">Password</label>
               <br />
-              <Password inputStyle={{width: "100%",   height: "3.4rem", fontSize: "1.1rem", fontFamily: "Noyh R W01 Medium"}} style={{width: "100%", height: "3.4rem", fontSize: "1.1rem"}} value={value} onChange={(e) => setValue(e.target.value)} feedback={false}
+              <Password inputStyle={{width: "100%",   height: "3.4rem", fontFamily: "Noyh R W01 Medium"}} 
+              style={{width: "100%", height: "3.4rem", fontSize: "1.1rem"}} 
+              id="password"
+              value={value} onChange={(e) => setValue(e.target.value)} feedback={false}
               toggleMask />
             </div>    
 
