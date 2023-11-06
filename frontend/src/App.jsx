@@ -3,8 +3,7 @@ import { Menubar } from 'primereact/menubar';
 import { Card } from 'primereact/card';
 import {useNavigate} from 'react-router-dom';
         
-import { Button } from 'primereact/button';
-        
+import { Button } from 'primereact/button';      
 
 
 function App() {
@@ -114,6 +113,7 @@ return (
           <h2>Quezon Street, Panabo City, Davao Region, 8105</h2>
           <h2>Contact Number na wala ko kabalo</h2>
       </div>
+
     </>
   )
 }

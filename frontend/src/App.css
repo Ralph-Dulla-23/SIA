@@ -70,6 +70,7 @@
   color: rgb(0, 0, 0);
   
   float: right;
+  z-index: 1;
 }
 /* content2 */
 
