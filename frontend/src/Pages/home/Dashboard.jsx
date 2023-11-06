@@ -25,6 +25,39 @@ function Dashboard() {
           <Column header="Status"></Column>
         </DataTable>
       </div>
+
+      <div className="chatbox">
+
+   
+      <label for="click">
+      <i class="fab fa-facebook-messenger"></i>
+      <i class="pi pipi-times"></i>
+      </label>
+      <div class="wrapper">
+         <div class="head-text">
+            Let's chat? - Online
+         </div>
+         <div class="chat-box">
+            <div class="desc-text">
+               Please fill out the form below to start chatting with the next available agent.
+            </div>
+            <form action="#">
+               <div class="field">
+                 
+               </div>
+               <div class="field">
+
+               </div>
+               <div class="field textarea">
+                  <textarea cols="30" rows="10" placeholder="Explain your queries.." required></textarea>
+               </div>
+               <div class="field">
+                  <button type="submit">Start Chat</button>
+               </div>
+            </form>
+         </div>
+      </div>
+    </div>
     </>
   )
 }

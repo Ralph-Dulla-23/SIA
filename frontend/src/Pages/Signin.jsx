@@ -28,10 +28,6 @@ function Signin() {
       icon: 'pi pi-fw pi-info-circle',
     },
     {
-      label: <div className='navtext' >INQUIRY</div>,
-      icon: 'pi pi-fw pi-question-circle',
-    },
-    {
       label: <div className='navtext' onClick={handleLoginClick}>LOGIN</div>,
       icon: 'pi pi-fw pi-sign-in',
     }
