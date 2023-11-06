@@ -5,10 +5,14 @@ function Inquiry() {
 
     return (
 
-        <div>
-            <NavBar />
-            Inquiry
-        </div>
+        <>
+
+            <div className='C1'>
+                <NavBar />
+                Inquiry
+            </div>
+
+        </>
     )
 }
 
