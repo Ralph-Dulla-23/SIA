@@ -8,8 +8,8 @@ import { Button } from 'primereact/button';
 function Staff() {
 
     const header = (
-        <div className="flex flex-wrap align-items-center justify-content-between gap-2" style={{ minWidth: '50rem', padding: '0.4rem 2.1rem' }}>
-          <span className="text-xl text-900 font-bold" style={{ fontSize: '1.6rem' }}>Staff</span>
+        <div className="flex flex-wrap align-items-center justify-content-between gap-2" style={{ minWidth: '50rem', padding: '0.4rem 1.1rem' }}>
+          <span className="m-2" style={{ margin: 'auto 0rem', fontSize: '1.9rem' }}>Staff</span>
         </div>
       );
 
@@ -21,12 +21,12 @@ function Staff() {
 
                 <NavBar />
 
-                <div className="card" style={{ padding: '1.4rem 2.1rem', backgroundColor: 'white', margin: '3.2rem 1rem' }}>
-                    <DataTable header={header}>
-                        <Column field="name" header="ID"></Column>
-                        <Column field="price" header="Name"></Column>
-                        <Column field="category" header="Job"></Column>
-                        <Column header="Permissions"></Column>
+                <div className="card" style={{ padding: '1.4rem 2.1rem', minWidth: '50rem' }}>
+                    <DataTable header={header} stripedRows tableStyle={{height: '35rem'}}>
+                        <Column field="name" header="ID" alignHeader={'center'}></Column>
+                        <Column field="price" header="Name" alignHeader={'center'}></Column>
+                        <Column field="category" header="Job"alignHeader={'center'}></Column>
+                        <Column header="Permissions" alignHeader={'center'}></Column>
                     </DataTable>
                 </div>
 
