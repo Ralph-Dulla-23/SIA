@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import './index.css'
+import './assets/style.css'
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';

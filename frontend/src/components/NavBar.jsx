@@ -1,38 +1,37 @@
 import React from 'react'
 import { Menubar } from 'primereact/menubar';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png'
 
 function NavBar() {
 
     const navigate = useNavigate();
-    const handleDashboardClick = () => navigate('/Dashboard');
-    const handleInquiryClick = () => navigate('/Inquiry');
-    const handleStaffClick = () => navigate('/Staff');
+    const handleHomeClick = () => navigate('/');
+    const handleServiceClick = () => navigate('/Services');
+    const handleLoginClick = () => navigate('/Login');
 
     const items = [
         {
-            label: <div className='navtext' onClick={handleDashboardClick}>DASHBOARD</div>,
+            label: <div className='navtext' onClick={handleHomeClick}>HOME</div>,
             icon: 'pi pi-fw pi-home',
         },
         {
-            label: <div className='navtext' onClick={handleInquiryClick}>INQUIRY</div>,
+            label: <div className='navtext' onClick={handleServiceClick}>SERVICES</div>,
             icon: 'pi pi-fw pi-info-circle',
         },
         {
-            label: <div className='navtext' onClick={handleStaffClick}>STAFF</div>,
-            icon: 'pi pi-fw pi-question-circle',
-        },
-        {
-            label: <div className='navtext'>LOGOUT</div>,
+            label: <div className='navtext' onClick={handleLoginClick}>LOGIN</div>,
             icon: 'pi pi-fw pi-sign-in',
         }
     ];
-    const start = <h1>VSP LAUNDRY SHOP</h1>;
+
+
+    const start = <img src={logo} alt="logo" style={{ height: '2.2rem', width: 'auto' }} />;
 
     return (
-        <div>
+        <>
             <Menubar className="navbar" model={items} start={start} />
-        </div>
+        </>
     )
 }
 
