@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
+@import url('https://db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=Noyh+R+W01+Medium');
+
+* {
+    margin: 0;
+    font-family: "Noyh R W01 Medium";
+    box-sizing: border-box;
+}
+
+/* NavBar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.6rem;
+    backdrop-filter: blur(0.65rem);
+    justify-content: space-around;
+    z-index: 4;
+}
+
+.navtext {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.7rem;
+    color: #383a4a;
+    float: right;
+}
+
+/* Containers */
+
+.content,
+.content2,
+.content3 {
+    width: 100%;
+    padding: 2rem 4rem;
+}
+
+.content {
+    min-height: 100vh;
+    max-height: 120vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    height: 120vh;
+    display: flex;
+    padding: 2rem 5%;
+}
+
+.content3 {
+    padding: 2rem 5%;
+    background-color: #38bdff;
+}
+
+/* Banner */
+
+.bannerCard {
+    height: 24rem;
+    width: 35rem;
+    padding: 2.3rem 2rem;
+    margin: 6rem;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1rem;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 5.1rem;
+}
+
+.bannerCard p {
+    padding: 0.8rem 4rem 0.8rem 0;
+    font-size: 1.7rem;
+}
+
+/* About */
+
+.infocard {
+    width: 60%;
+    color: #383a4a;
+    margin: 4rem 6rem;
+    box-shadow: none;
+}
+
+.infocard h1 {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.m-1 {
+    text-align: justify;
+    font-size: 1.7rem;
+    margin-top: 2.4rem;
+}
+
+.rightcard {
+    align-items: right;
+    background: url('src/assets/card1.png') no-repeat;
+    width: 100%;
+}
+
+.rightcard2 {
+    background: url('src/assets/card2.png') no-repeat;
+    height: 100vh;
+    margin: -50px 0;
+}
+
+/* FAQ */
+
+.faq {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 100px;
+    border-radius: 20px;
+    height: 50rem;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 60px;
+    padding: 10px 0;
+}
+
+/* Footer*/
+
+.footnote {
+    height: 20vh;
+    background-color: #222fab;
+    text-align: center;
+    align-items: justify;
+    color: white;
+}
+
+.footnote h2 {
+    font-weight: 200;
+}
+
+/* Waves */
+
+.wave {
+    position: absolute;
+    margin: -2rem -4rem;
+    width: 100%;
+    height: 10rem;
+    background: url('src/assets/waves/wave2.png') no-repeat;
+    z-index: 1;
+}
+
+.wave2 {
+    position: absolute;
+    margin: -10rem -5%;
+    width: 100%;
+    height: 10rem;
+    background: url('src/assets/bwave.png') no-repeat;
+    z-index: 2;
+}
+
+.wave3 {
+    background: url('src/assets/lastwave.png') no-repeat;
+    position: absolute;
+    margin: -2rem -4rem;
+    width: 100%;
+    height: 10rem;
+    z-index: 3;
+}
+
+/* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+/* Login and Sign In*/
+
+.credentials {
+    width: 35rem;
+    min-height: 32rem;
+    max-height: 40rem;
+    background-color: rgb(255, 255, 255);
+    margin: 2rem auto;
+    padding: 2rem 0;
+    border-radius: 1.4rem;
+}
+
+.credentials h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #383a4a;
+
+}
+
+.addPanel,
+.passPanel,
+.loginButtons {
+    margin: 1.02rem 1rem 0rem;
+    padding: 0.5rem 3rem;
+}
+
+#username,
+#password {
+    width: 100%;
+    height: 3rem;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.loginb,
+.loginG,
+.signin {
+    width: 100%;
+    margin: 1.02rem 0rem 0rem;
+    font-size: 1.2rem;
+}
+
+.signin {
+    display: block;
+    align-items: baseline;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.m-2 {
+    font-size: 20px;
+}
+
+.m-3 {
+    font-size: 20px;
+}
+
+/*chat box*/
+.is-sticky {
+    position: fixed;
+    left: 98%;
+    top: 95%;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    z-index: 999;
+}
+
+#click {
+    display: none;
+}
+
+label {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    height: 4rem;
+    width: 4rem;
+    background: -webkit-linear-gradient(left, #026698, #222fab);
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+label i {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+
+label i#pis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#click:checked~label i#pis {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#click:checked~label i.pi {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.wrapper {
+    position: absolute;
+    right: 20px;
+    bottom: 2rem;
+    width: 20rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#click:checked~.wrapper {
+    opacity: 1;
+    bottom: 5.7rem;
+    pointer-events: auto;
+}
+
+.wrapper .head-text {
+    line-height: 60px;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 25px;
+    background: -webkit-linear-gradient(left, #222fab, #026698);
+}
+
+.wrapper .chat-box {
+    border: 0.2px solid #2230ab53;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.chat-box .desc-text {
+    color: #515365;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.chat-box form {
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: 1px solid lightgrey;
+}
+
+.chat-box form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.chat-box form .field:last-child {
+    margin-bottom: 15px;
+}
+
+form .field input,
+form .field button,
+form .textarea textarea {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus,
+form .textarea textarea:focus {
+    border-color: #38bdff;
+}
+
+form .field input::placeholder,
+form .textarea textarea::placeholder {
+    color: silver;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus::placeholder,
+form .textarea textarea:focus::placeholder {
+    color: lightgrey;
+}
+
+.chat-box form .textarea {
+    height: 70px;
+    width: 100%;
+}
+
+.chat-box form .textarea textarea {
+    height: 100%;
+    border-radius: 50px;
+    resize: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.chat-box form .field button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(left, #222fab, #026698);
+    transition: all 0.3s ease;
+}
+
+.chat-box form .field button:active {
+    transform: scale(0.97);
+}
+
+/* Tables */
+
+.tableCard {
+    margin-top: 0;
+    padding: 1.4rem 2.1rem;
+    min-width: 50rem;
+    height: 97.1vh;
+}
