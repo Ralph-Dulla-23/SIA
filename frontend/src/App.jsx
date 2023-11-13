@@ -5,6 +5,11 @@ import MessageFab from './components/MessageFab';
 import { Panel } from 'primereact/panel';
 import { Button } from 'primereact/button';
 
+import Wave1 from './components/waves/Wave1';
+import Wave2 from './components/waves/Wave2';
+import Wave3 from './components/waves/Wave3';
+import AboutRight from './components/AboutRight';
+
 function App() {
 
   return (
@@ -27,12 +32,13 @@ function App() {
 
         </div>
 
-        <div className="wave">
-        </div>
+        <Wave1 />
 
       </div>
 
-      <div className="content2" style={{ marginTop: '2.9rem' }}>
+      <div className="content2">
+
+
 
         <div className='infocard'>
 
@@ -51,13 +57,12 @@ function App() {
           <div className="rightcard2"></div>
         </div>
 
-        <div className="wave2">
-        </div>
+        <Wave2/>
 
       </div>
 
 
-      <div className="content3" style={{ marginTop: '2.9rem' }}>
+      <div className="content3">
 
         <div className="faq">
 
@@ -107,9 +112,8 @@ function App() {
 
         </div>
 
-        <div className="wave3">
-        </div>
-        
+        <Wave3 />
+
       </div>
 
       <div className="footnote">

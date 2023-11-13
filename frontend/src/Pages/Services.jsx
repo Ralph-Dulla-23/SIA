@@ -20,7 +20,7 @@ function Services() {
   const [visible4, setVisible4] = useState(false);
 
   const header1 = (
-    <img alt="Card" src={BasicServe} style={{width:'100%', height:'8rem'}}/>
+    <img alt="Card" src={BasicServe} style={{ width: '100%', height: '8rem' }} />
   );
   const footer1 = (
     <>
@@ -44,7 +44,7 @@ function Services() {
   );
 
   const header2 = (
-    <img alt="Card" src={Rush} style={{width:'100%', height:'8rem'}}/>
+    <img alt="Card" src={Rush} style={{ width: '100%', height: '8rem' }} />
   );
   const footer2 = (
     <>
@@ -57,7 +57,7 @@ function Services() {
   );
 
   const header3 = (
-    <img alt="Card" src={DryClean} style={{width:'100%', height:'8rem'}}/>
+    <img alt="Card" src={DryClean} style={{ width: '100%', height: '8rem' }} />
   );
   const footer3 = (
     <>
@@ -77,7 +77,7 @@ function Services() {
   );
 
   const header4 = (
-    <img alt="Card" src={Special} style={{width:'100%', height:'8rem'}}/>
+    <img alt="Card" src={Special} style={{ width: '100%', height: '8rem' }} />
   );
   const footer4 = (
     <>
@@ -103,41 +103,43 @@ function Services() {
 
       <NavBar />
 
-      <MessageFab />
-
       <div className="content" style={{ marginTop: '2.9rem' }}>
 
-        <h1 className='stitle'>Services</h1>
+        <div className="serviceWrap">
 
-        <div className="Services">
+          <h1 className='stitle'>Services</h1>
 
-          <Card title="Basic Services" footer={footer1} header={header1} className="serviceCard">
-            <p className="m-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-            </p>
-          </Card>
+          <div className="Services">
 
-          <Card title="Rush Laundry" footer={footer2} header={header2} className="serviceCard">
-            <p className="m-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-            </p>
-          </Card>
+            <Card title="Basic Services" footer={footer1} header={header1} className="serviceCard">
+              <p className="m-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+              </p>
+            </Card>
 
-          <Card title="Dry Clean" footer={footer3} header={header3} className="serviceCard">
-            <p className="m-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-            </p>
-          </Card>
+            <Card title="Rush Laundry" footer={footer2} header={header2} className="serviceCard">
+              <p className="m-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+              </p>
+            </Card>
 
-          <Card title="Special Laundry" footer={footer4} header={header4} className="serviceCard">
-            <p className="m-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-            </p>
-          </Card>
+            <Card title="Dry Clean" footer={footer3} header={header3} className="serviceCard">
+              <p className="m-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+              </p>
+            </Card>
+
+            <Card title="Special Laundry" footer={footer4} header={header4} className="serviceCard">
+              <p className="m-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+              </p>
+            </Card>
+
+          </div>
 
         </div>
 
