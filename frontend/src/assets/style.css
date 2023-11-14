@@ -482,7 +482,7 @@ form .textarea textarea:focus::placeholder {
 
 .inquiry {
     position: absolute;
-    margin: 4em 5em;
+    margin: 4em 5.5em;
     height: 80vh; 
     width: 90%;
     display: flex; 
