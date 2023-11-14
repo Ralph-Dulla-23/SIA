@@ -498,6 +498,7 @@ form .textarea textarea:focus::placeholder {
     border: 1px solid #ececec;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+
 }
 
 .chatBox {
@@ -541,6 +542,8 @@ form .textarea textarea:focus::placeholder {
     width: 90%;
     height: inherit;
     border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .inputs Button {
