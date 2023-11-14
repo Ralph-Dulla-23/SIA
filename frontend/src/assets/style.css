@@ -32,11 +32,11 @@
 /* Fonts*/
 
 .m-1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .m-2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .m-3 {
@@ -54,7 +54,7 @@
 }
 
 .content {
-    min-height: 105vh;
+    min-height: 110vh;
     background: url('src/assets/images/Background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -82,10 +82,10 @@
 /* Banner */
 
 .bannerCard {
-    min-height: 20em;
-    width: 34em;
+    height: 17em;
+    width: 30em;
     padding: 2.3em 2em;
-    margin: 6em;
+    margin: 3em;
     background-color: #7e6c6028;
     color: #f7f8fc;
     text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
@@ -95,19 +95,19 @@
 }
 
 .bannerCard h1 {
-    font-size: 5.1rem;
+    font-size: 3.5rem;
 }
 
 .bannerCard p {
     padding: 0.57em 3em 0.57em 0;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 /* About */
 
 .aboutContainer {
     display: flex;
-    margin: 4.3em 2em;
+    margin: 2.3em 2em;
 }
 
 .aboutRight{
@@ -117,7 +117,7 @@
 .aboutLeft {
     width: 50%;
     color: #383a4a;
-    margin: auto 1.7em;
+    margin: auto 3.7em;
     box-shadow: none;
     padding: 1em 6em;
 }
@@ -134,14 +134,15 @@
 
 .rightcard {
     position: absolute;
-    height: 31em;
+    height: 25em;
     z-index: 1;
+    top: 2em;
 }
 
 .rightcard2 {
     position: absolute;
-    height: 31em;
-    top: -1.5em;
+    height: 25em;
+    top: 1.5em;
     left: 2em;
     z-index: 2;
 }
@@ -149,10 +150,10 @@
 .aboutPic {
     position: absolute;
     border-radius: 50%;
-    height: 22em;
-    width: 22em;
+    height: 19em;
+    width: 19em;
     top: 4.8em;
-    left: 5.8em;
+    left: 3.8em;
     box-shadow: 9.7px 6px #4dc5d8;
     z-index: 3;
 }
@@ -542,16 +543,16 @@ form .textarea textarea:focus::placeholder {
 }
 
 /* Media Queries */
-
-@media only screen and (min-width: 1366px) {
+/* 1080p */
+@media only screen and (max-width: 1980px) {
     /* Fonts*/
 
 .m-1 {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .m-2 {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
 }
 
 .m-3 {
@@ -567,7 +568,30 @@ form .textarea textarea:focus::placeholder {
     position: relative;
     width: 100%;
 }
+.content {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
 
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 110vh;
+}
+
+.content3 {
+    min-height: 185vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
 
 
 /* Banner */
@@ -576,7 +600,7 @@ form .textarea textarea:focus::placeholder {
     height: 400px;
     width: 600px;
     padding: 2.3em 2em;
-    margin: 200px 300px;
+    margin: 200px 200px;
     background-color: #7e6c6028;
     color: #f7f8fc;
     text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
@@ -598,11 +622,12 @@ form .textarea textarea:focus::placeholder {
 
 .aboutContainer {
     display: flex;
-    margin: 3.3em 10em;
+    margin: 7.3em 10em;
 }
 
 .aboutRight{
     position: relative;    
+    
 }
 
 .aboutLeft {
@@ -610,7 +635,7 @@ form .textarea textarea:focus::placeholder {
     color: #383a4a;
     margin: auto 1.7em;
     box-shadow: none;
-    padding: 1em 6em;
+    padding: 1em 2em;
 }
 
 .aboutLeft h1 {
@@ -627,24 +652,24 @@ form .textarea textarea:focus::placeholder {
     position: absolute;
     height: 36em;
     z-index: 1;
-    left: 2em;
+    left: 5em;
 }
 
 .rightcard2 {
     position: absolute;
     height: 36em;
     top: -1.5em;
-    left: 5em;
+    left: 7em;
     z-index: 2;
 }
 
 .aboutPic {
     position: absolute;
     border-radius: 50%;
-    height: 27em;
-    width: 27em;
+    height: 25em;
+    width: 25em;
     top: 4.8em;
-    left: 5.8em;
+    left: 7.8em;
     box-shadow: 9.7px 6px #4dc5d8;
     z-index: 3;
 }
@@ -696,3 +721,375 @@ form .textarea textarea:focus::placeholder {
     bottom: '0';
 }
 }
+
+@media only screen and (max-width: 1367px) {
+    /* Fonts*/
+
+.m-1 {
+    font-size: 1rem;
+}
+
+.m-2 {
+    font-size: 1.7rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+.content {
+    min-height: 105vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 70vh;
+}
+
+.content3 {
+    min-height: 185vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+
+/* Banner */
+
+.bannerCard {
+    height: 340px;
+    width: 600px;
+    padding: 2.3em 2em;
+    margin: 150px 200px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 70px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 30px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 7.3em 10em;
+}
+
+.aboutRight{
+    position: relative;    
+    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 26em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 26em;
+    top: -1.5em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 20em;
+    width: 20em;
+    top: 4.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* FAQ */
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    padding: 2em 100px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 10px 0;
+}
+
+/* Footer*/
+
+.footnote {
+    height: 20vh;
+    padding: 2rem 0;
+    background-color: #222fab;
+    text-align: center;
+    align-items: justify;
+    color: white;
+}
+
+.footnote h2 {
+    font-weight: 200;
+}
+
+/* Wave */
+
+.wave {
+    width: '100%';
+    position: 'absolute';
+    bottom: '0';
+}
+}
+
+@media only screen and (max-width: 1260px) {
+/* Fonts*/
+
+.m-1 {
+    font-size: 1.4rem;
+}
+
+.m-2 {
+    font-size: 1.7rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+.content {
+    min-height: 90vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 60vh;
+}
+
+.content3 {
+    min-height: 155vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+
+/* Banner */
+
+.bannerCard {
+    height: 300px;
+    width: 500px;
+    padding: 2.3em 2em;
+    margin: 150px 150px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 50px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 30px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 3.3em 10em;
+}
+
+.aboutRight{
+    position: relative;    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 3.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 23em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 23em;
+    top: -1em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+    top: 4.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* FAQ */
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    padding: 2em 100px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 10px 0;
+}
+
+/* Footer*/
+
+.footnote {
+    height: 20vh;
+    padding: 2rem 0;
+    background-color: #222fab;
+    text-align: center;
+    align-items: justify;
+    color: white;
+}
+
+.footnote h2 {
+    font-weight: 200;
+}
+
+/* Wave */
+
+.wave {
+    width: '100%';
+    position: 'absolute';
+    bottom: '0';
+}
+}
+/*
+/* Extra small devices (phones, 600px and down) */
+/*
+@media only screen and (max-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+/*
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+/*
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*
+@media only screen and (min-width: 1200px) {...} 
+*/
