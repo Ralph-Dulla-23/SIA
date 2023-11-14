@@ -20,7 +20,7 @@ function App() {
 
       <MessageFab />
 
-      <div className="content" style={{ marginTop: '2.9rem' }}>
+      <div className="content" style={{ marginTop: '2.9em' }}>
 
         <div className="bannerCard">
 
@@ -38,26 +38,26 @@ function App() {
 
       <div className="content2">
 
+        <div className="aboutContainer">
 
+          <div className='aboutLeft'>
 
-        <div className='infocard'>
+            <h1>About</h1>
 
-          <h1>About</h1>
-          <p className="m-1">
-            VSP Laundry Shop was founded in [Year] by a group of laundry enthusiasts who shared a
-            common vision: to provide a comprehensive and customer-centric laundry experience.
-            Their passion for laundry stemmed from the belief that doing laundry should be easy, efficient,
-            and accessible to everyone.
-            With that aspiration, VSP Laundry Shop was born.
-          </p>
+            <p className="m-2">
+              VSP Laundry Shop was founded in [Year] by a group of laundry enthusiasts who shared a
+              common vision: to provide a comprehensive and customer-centric laundry experience.
+              Their passion for laundry stemmed from the belief that doing laundry should be easy, efficient,
+              and accessible to everyone. With that aspiration, VSP Laundry Shop was born.
+            </p>
+
+          </div>
+
+          <AboutRight />
 
         </div>
 
-        <div className="rightcard">
-          <div className="rightcard2"></div>
-        </div>
-
-        <Wave2/>
+        <Wave2 />
 
       </div>
 
@@ -68,8 +68,8 @@ function App() {
 
           <h1>FAQs</h1>
 
-          <Panel className='faqPanel' header="What are the services you offer?" toggleable collapsed='false'>
-            <p className="m-3">
+          <Panel className='faqPanel' header="What are the services you offer?" style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -79,8 +79,8 @@ function App() {
 
           <br />
 
-          <Panel className='faqPanel' header="What kind of items do you cater for washing?" toggleable collapsed='false'>
-            <p className="m-3">
+          <Panel className='faqPanel' header="What kind of items do you cater for washing?"  style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -90,8 +90,8 @@ function App() {
 
           <br />
 
-          <Panel className='faqPanel' header="What are your opening hours?" toggleable collapsed='false'>
-            <p className="m-3">
+          <Panel className='faqPanel' header="What are your opening hours?" style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -101,8 +101,8 @@ function App() {
 
           <br />
 
-          <Panel className='faqPanel' header="How many days will I receive my items back?" toggleable collapsed='false'>
-            <p className="m-3">
+          <Panel className='faqPanel' header="How many days will I receive my items back?"  style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

@@ -19,7 +19,7 @@ function Signin() {
 
       <NavBar />
 
-      <div className="content" style={{ marginTop: '2.9rem' }}>
+      <div className="content" style={{ marginTop: '2.9rem', minHeight: '120vh' }}>
 
         <Card className='credentials'>
 

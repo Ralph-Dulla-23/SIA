@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import NavBar from '../components/NavBar';
-import MessageFab from '../components/MessageFab';
+import Wave1 from '../components/waves/Wave1'
 
 import BasicServe from '../assets/images/BasicServices.jpg'
 import Rush from '../assets/images/RushLaundry.jpg'
@@ -25,7 +25,7 @@ function Services() {
   const footer1 = (
     <>
       <Button label="Show More" onClick={() => setVisible1(true)} />
-      <Dialog header="Basic Services" visible={visible1} style={{ width: '50vw' }} onHide={() => setVisible1(false)}>
+      <Dialog header="Basic Services" visible={visible1} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible1(false)}>
         <p className="scard1">Wash'n Dry Fold</p>
         <p className="scard1">Wash'n Dry and Press</p>
         <p className="scard1">Washin Dry and Press with Hanger</p>
@@ -49,7 +49,7 @@ function Services() {
   const footer2 = (
     <>
       <Button label="Show More" onClick={() => setVisible2(true)} />
-      <Dialog header="Rush Laundry" visible={visible2} style={{ width: '50vw' }} onHide={() => setVisible2(false)}>
+      <Dialog header="Rush Laundry" visible={visible2} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible2(false)}>
         <p className="scard1">Wash'n Dry Fold</p>
         <p className="scard1">Wash'n Dry and Press</p>
       </Dialog>
@@ -62,7 +62,7 @@ function Services() {
   const footer3 = (
     <>
       <Button label="Show More" onClick={() => setVisible3(true)} />
-      <Dialog header="Dry Clean" visible={visible3} style={{ width: '50vw' }} onHide={() => setVisible3(false)}>
+      <Dialog header="Dry Clean" visible={visible3} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible3(false)}>
         <p className="scard3">Polo/ Barong Long Sleeves</p>
         <p className="scard3">Suit Jacket (w/lining)</p>
         <p className="scard3">Stacks/Pants</p>
@@ -82,7 +82,7 @@ function Services() {
   const footer4 = (
     <>
       <Button label="Show More" onClick={() => setVisible4(true)} />
-      <Dialog header="Special Laundry" visible={visible4} style={{ width: '50vw' }} onHide={() => setVisible4(false)}>
+      <Dialog header="Special Laundry" visible={visible4} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible4(false)}>
         <p className="scard4">Back Pack</p>
         <p className="scard4">Sleeping Bag</p>
         <p className="scard4">Shoes Pair</p>
@@ -103,7 +103,7 @@ function Services() {
 
       <NavBar />
 
-      <div className="content" style={{ marginTop: '2.9rem' }}>
+      <div className="content" style={{ marginTop: '2.9em' }}>
 
         <div className="serviceWrap">
 
@@ -142,6 +142,8 @@ function Services() {
           </div>
 
         </div>
+
+        <Wave1/>
 
       </div>
     </>

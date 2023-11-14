@@ -26,7 +26,7 @@ function NavBar() {
     ];
 
 
-    const start = <img src={logo} alt="logo" style={{ height: '2.2rem', width: 'auto' }} />;
+    const start = <img src={logo} alt="logo" style={{ height: '2.5em', width: 'auto' }} />;
 
     return (
         <>

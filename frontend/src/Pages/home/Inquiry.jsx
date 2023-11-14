@@ -2,34 +2,46 @@ import React from 'react'
 import NavBarAdmin from '../../components/NavBarAdmin'
 
 import { InputTextarea } from 'primereact/inputtextarea';
+import { InputText } from 'primereact/inputtext';
+
 import { Button } from 'primereact/button';
 
 function Inquiry() {
-
-
-
 
     return (
 
         <>
             <NavBarAdmin />
 
-            <div className='content' style={{ marginTop: '2.9rem' }}>
+            <div className='content1' style={{ marginTop: '2.9rem' }}>
 
+                <div className="inquiry">
 
-                <div className="card" style={{ margin: '1.4rem 2.1rem', height: '40rem', minWidth: '50rem', display: 'flex', backgroundColor: '#FFFFFF' }}>
+                    <div className='allChats'>
 
-                    <div className='allChats' style={{ height: 'inherit', width: '25%', backgroundColor: '#ffffff', border: '1px solid #ececec' }}>
+                        <span className="p-input-icon-left" style={{ width: '100%', position: 'absolute', margin: '1em 1.3em' }}>
+                            <i className="pi pi-search" />
+                            <InputText placeholder="Search" />
+                        </span>
+
+                        <table style={{ height: 'inherit', width: '100%' }}>
+                            <td>
+                                
+                            </td>
+                        </table>
+
 
                     </div>
 
-                    <div className='chatBox' style={{ height: 'inherit', width: '75%', backgroundColor: '#ececec', display: 'block' }}>
+                    <div className='chatBox'>
 
                         <div className='chatHistory' >
+
                         </div>
 
-                        <div style={{ top: 'inherit', marginTop: '593px', height: '20px', width: '1230px' }}>
-                            <textarea style={{ width: 'inherit', height: '3rem', position: 'absolute' }} name="" id="" cols="30" rows="10"></textarea>
+                        <div className='inputs'>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <Button label='Send' />
                         </div>
 
                     </div>

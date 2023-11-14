@@ -5,6 +5,7 @@ import { staffData } from '../../assets/staffData.js';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
+import { Tag } from 'primereact/tag';
 
 function Staff() {
 
@@ -15,11 +16,34 @@ function Staff() {
     );
 
     const [staff, setStaff] = useState([]);
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     useEffect(() => {
         staffData.getStaff().then(data => setStaff(data));
     }, []);
 
+    const statusBodyTemplate = (staff) => {
+        return <Tag value={staff.Job} severity={getSeverity(staff)} style={{ fontSize: '1rem', fontWeight: '100',
+        width: '4.5em' }}></Tag>;
+      };
+    
+      const getSeverity = (staff) => {
+    
+        switch (staff.Job) {
+          case 'Manager':
+            return 'danger';
+    
+          case 'Inquiry':
+            return 'warning';
+    
+          case 'Staff':
+            return 'help';
+    
+          default:
+            return null;
+        }
+      };
+    
 
     return (
 
@@ -30,11 +54,11 @@ function Staff() {
 
                 <div className="tableCard">
 
-                    <DataTable value={staff} paginator rows={5} selectionMode="single" header={header} stripedRows tableStyle={{height: '20rem'}}>
+                    <DataTable value={staff} paginator rows={5} selectionMode="single" header={header} stripedRows 
+                    selection={selectedProduct} tableStyle={{height: '20rem'}}>
                         <Column field="ID" header="ID" alignHeader={'center'} style={{textAlign: 'center'}}></Column>
                         <Column field="Name" header="Name" alignHeader={'center'} style={{textAlign: 'center'}}></Column>
-                        <Column field="Job" header="Job" alignHeader={'center'} style={{textAlign: 'center'}}></Column>
-                        <Column header="Permissions" alignHeader={'center'} style={{textAlign: 'center'}}sq></Column>
+                        <Column field="Job" header="Job" body={statusBodyTemplate} alignHeader={'center'} style={{textAlign: 'center'}}></Column>
                     </DataTable>
 
                 </div>
