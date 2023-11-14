@@ -14,7 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.6em;
     backdrop-filter: blur(0.65rem);
     justify-content: space-around;
     z-index: 4;
@@ -24,69 +24,73 @@
     font-size: 1rem;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 1.7rem;
+    margin-left: 1.7em;
     color: #383a4a;
     float: right;
+}
+
+/* Fonts*/
+
+.m-1 {
+    font-size: 1.2rem;
+}
+
+.m-2 {
+    font-size: 1.6rem;
+}
+
+.m-3 {
+    font-size: 2rem;
 }
 
 /* Containers */
 
 .content,
+.content1,
 .content2,
 .content3 {
+    position: relative;
     width: 100%;
 }
 
 .content {
-    position: relative;
     min-height: 105vh;
-    max-height: 140vh;
     background: url('src/assets/images/Background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 1rem;
+    padding-top: 1em;
     align-items: start;
 }
 
 .content1 {
-    position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background: url('src/assets/images/Background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .content2 {
-    position: relative;
-    height: 120vh;
-    display: flex;
+    min-height: 110vh;
 }
 
 .content3 {
-    min-height: 120vh;
-    height: 185vh;
-    position: relative;
+    min-height: 185vh;
+    padding: 5.8em 0;
     background-color: #38bdff;
-}
-
-/* Paddings */
-
-.wrapper1{
-    padding: 2rem 4rem;
 }
 
 /* Banner */
 
 .bannerCard {
-    height: 24rem;
-    width: 35rem;
-    padding: 2.3rem 2rem;
-    margin: 6rem;
+    min-height: 20em;
+    width: 34em;
+    padding: 2.3em 2em;
+    margin: 6em;
     background-color: #7e6c6028;
     color: #f7f8fc;
     text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
     backdrop-filter: blur(10px);
-    border-radius: 3.1rem;
+    border-radius: 3.1em;
     box-shadow: none;
 }
 
@@ -95,50 +99,72 @@
 }
 
 .bannerCard p {
-    padding: 0.8rem 4rem 0.8rem 0;
+    padding: 0.57em 3em 0.57em 0;
     font-size: 1.7rem;
 }
 
 /* About */
 
-.infocard {
-    width: 60%;
+.aboutContainer {
+    display: flex;
+    margin: 4.3em 2em;
+}
+
+.aboutRight{
+    position: relative;    
+}
+
+.aboutLeft {
+    width: 50%;
     color: #383a4a;
-    margin: 4rem 6rem;
+    margin: auto 1.7em;
     box-shadow: none;
+    padding: 1em 6em;
 }
 
-.infocard h1 {
+.aboutLeft h1 {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4.1rem;
 }
 
-.m-1 {
+.aboutLeft p {
+    padding: 1em;
     text-align: justify;
-    font-size: 1.7rem;
-    margin-top: 2.4rem;
 }
 
 .rightcard {
-    align-items: right;
-    background: url('src/assets/card1.png') no-repeat;
-    width: 100%;
+    position: absolute;
+    height: 31em;
+    z-index: 1;
 }
 
 .rightcard2 {
-    background: url('src/assets/card2.png') no-repeat;
-    height: 100vh;
-    margin: -50px 0;
+    position: absolute;
+    height: 31em;
+    top: -1.5em;
+    left: 2em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 22em;
+    width: 22em;
+    top: 4.8em;
+    left: 5.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
 }
 
 /* FAQ */
 
 .faq {
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
-    padding: 5rem 100px;
+    padding: 2em 100px;
     border-radius: 20px;
-    height: 54rem;
+    min-height: 90vh;
     color: #383a4a;
     background-color: aliceblue;
     position: relative;
@@ -148,15 +174,10 @@
     border-radius: 20px;
 }
 
-.faqPanel .p-panel .p-panel-toggleable .p-panel-header {
-    font-size: 1.2rem;
-}
-
 .faq h1 {
     margin: 10px 10px;
     text-align: center;
-    
-    font-size: 60px;
+    font-size: 3.6rem;
     padding: 10px 0;
 }
 
@@ -182,23 +203,22 @@
     gap: 50px;
     border-radius: 20px;
     justify-content: center;
-    
 }
 
 .serviceWrap {
     background-color: #7e6c6009;
-    margin: 2rem;
+    margin: 2em;
     backdrop-filter: blur(4px);
     border-radius: 1.1rem;
 }
 
-.stitle{
+.stitle {
     margin: 0.75rem;
     text-align: center;
     font-size: 4rem;
     color: #f7f8fc;
     text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
-    
+
 }
 
 .serviceCard {
@@ -217,19 +237,19 @@
 /* Wave */
 
 .wave {
-    width:'100%';
-    position:'absolute';
+    width: '100%';
+    position: 'absolute';
     bottom: '0';
 }
 
 /* Login and Sign In*/
 
 .credentials {
+    margin: 3em auto;
     width: 35rem;
     min-height: 32rem;
     max-height: 40rem;
     background-color: rgb(255, 255, 255);
-    margin: 2rem auto;
     padding: 2rem 0;
     border-radius: 1.4rem;
 }
@@ -273,14 +293,6 @@
     align-items: baseline;
     text-align: center;
     font-size: 1rem;
-}
-
-.m-2 {
-    font-size: 20px;
-}
-
-.m-3 {
-    font-size: 20px;
 }
 
 /*chat box*/
@@ -456,11 +468,75 @@ form .textarea textarea:focus::placeholder {
     transform: scale(0.97);
 }
 
+.card{
+    margin: 1.4rem 2.1rem; 
+    min-height: 40rem; 
+    min-width: 50rem;
+    display: flex; 
+    background-color: #FFFFFF; 
+}
+
+.inquiry {
+    position: absolute;
+    margin: 4em;
+    height: 80vh; 
+    width: 90%;
+    display: flex; 
+    background-color: #FFFFFF; 
+}
+
+.allChats {
+    position: relative;
+    height: inherit;
+    width: 25%;
+    background-color: #ffffff;
+    border: 1px solid #ececec
+}
+
+.chatBox {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: inherit; 
+    width: 100%;
+    background-color: #ececec;
+    display: block;
+}
+
+.chatHistory {
+    height: 80%;
+}
+
+.inputs {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    height: 9.6vh;
+    width: 100%;
+}
+
+.inputs textarea {
+    width: 90%;
+    height: inherit;
+}
+
+.inputs Button {
+    border-radius: 0;
+    width: 10%;
+    height: inherit;
+}
+
+/* Inquiry */
+
+
 /* Tables */
 
 .tableCard {
-    margin-top: 0;
+    margin-top: 4em;
     padding: 1.4rem 2.1rem;
     min-width: 50rem;
-    height: 97.1vh;
+    min-height: 50vh;
 }

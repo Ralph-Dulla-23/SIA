@@ -1,41 +1,32 @@
 export const staffData = {
+
     getStaffData() {
+        
         return [
             {
-                ID: '1000',
-                Name: 'f230fh0g3',
-                Job: 'Bamboo Watch',
-                Permissions: 'Product Description',
+                ID: '000',
+                Name: 'John Doe',
+                Job: 'Manager'
             },
             {
-                ID: '1000',
-                Name: 'f230fh0g3',
-                Job: 'Bamboo Watch',
-                Permissions: 'Product Description',
+                ID: '001',
+                Name: 'John Doe',
+                Job: 'Inquiry'
             },
             {
-                ID: '1000',
-                Name: 'f230fh0g3',
-                Job: 'Bamboo Watch',
-                Permissions: 'Product Description',
+                ID: '002',
+                Name: 'John Doe',
+                Job: 'Employee'
             },
             {
-                ID: '1000',
-                Name: 'f230fh0g3',
-                Job: 'Bamboo Watch',
-                Permissions: 'Product Description',
+                ID: '003',
+                Name: 'John Doe',
+                Job: 'Employee'
             },
             {
-                ID: '1000',
-                Name: 'f230fh0g3',
-                Job: 'Bamboo Watch',
-                Permissions: 'Product Description',
-            },
-            {
-                ID: '1000',
-                Name: 'f230fh0g3',
-                Job: 'Bamboo Watch',
-                Permissions: 'Product Description',
+                ID: '004',
+                Name: 'John Doe',
+                Job: 'Employee'
             }
         ]
 

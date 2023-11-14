@@ -22,7 +22,7 @@ function MessageFab() {
 
         <div className="wrapper">
 
-          <div class="head-text">
+          <div className="head-text">
             Let's chat? - Online
           </div>
 

@@ -30,7 +30,7 @@ function NavBarAdmin() {
         }
     ];
 
-    const start = <img src={logo} alt="logo" style={{ height: '2.2rem', width: 'auto', cursor: 'pointer' }} onClick={handleBack}/>;
+    const start = <img src={logo} alt="logo" style={{ height: '2.5rem', width: 'auto', cursor: 'pointer' }} onClick={handleBack}/>;
 
     return (
         <>
