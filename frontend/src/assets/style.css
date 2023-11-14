@@ -540,3 +540,159 @@ form .textarea textarea:focus::placeholder {
     min-width: 50rem;
     min-height: 50vh;
 }
+
+/* Media Queries */
+
+@media only screen and (min-width: 1366px) {
+    /* Fonts*/
+
+.m-1 {
+    font-size: 1.4rem;
+}
+
+.m-2 {
+    font-size: 2.3rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+
+
+
+/* Banner */
+
+.bannerCard {
+    height: 400px;
+    width: 600px;
+    padding: 2.3em 2em;
+    margin: 200px 300px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 90px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 30px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 3.3em 10em;
+}
+
+.aboutRight{
+    position: relative;    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 6em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 36em;
+    z-index: 1;
+    left: 2em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 36em;
+    top: -1.5em;
+    left: 5em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 27em;
+    width: 27em;
+    top: 4.8em;
+    left: 5.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* FAQ */
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    padding: 2em 100px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 10px 0;
+}
+
+/* Footer*/
+
+.footnote {
+    height: 20vh;
+    padding: 2rem 0;
+    background-color: #222fab;
+    text-align: center;
+    align-items: justify;
+    color: white;
+}
+
+.footnote h2 {
+    font-weight: 200;
+}
+
+/* Wave */
+
+.wave {
+    width: '100%';
+    position: 'absolute';
+    bottom: '0';
+}
+}
