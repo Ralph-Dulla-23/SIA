@@ -1,151 +1,127 @@
-import './App.css'
-import { Menubar } from 'primereact/menubar';
-import { Card } from 'primereact/card';
-import {useNavigate} from 'react-router-dom';
-import { useState } from 'react';
-import { InputTextarea } from 'primereact/inputtextarea';
-        
-import { Button } from 'primereact/button';      
 
+import NavBar from './components/NavBar';
+import MessageFab from './components/MessageFab';
+
+import { Panel } from 'primereact/panel';
+import { Button } from 'primereact/button';
+
+import Wave1 from './components/waves/Wave1';
+import Wave2 from './components/waves/Wave2';
+import Wave3 from './components/waves/Wave3';
+import AboutRight from './components/AboutRight';
 
 function App() {
-  const navigate = useNavigate();
-  const handleHomeClick = () => navigate('/');
-  const handleServiceClick = () => navigate('/Services');
-  const handleLoginClick = () => navigate('/Login');
 
-  const items = [
-    {
-      label: <div className='navtext' onClick={handleHomeClick}>HOME</div>,
-      icon: 'pi pi-fw pi-home',
-    },
-    {
-      label: <div className='navtext' onClick={handleServiceClick}>SERVICES</div>,
-      icon: 'pi pi-fw pi-info-circle',
-    },
-    {
-      label: <div className='navtext' onClick={handleLoginClick}>LOGIN</div>,
-      icon: 'pi pi-fw pi-sign-in',
-    }
-  ];
-const start = <h1>VSP LAUNDRY SHOP</h1>;
-const [value, setValue] = useState('');
+  return (
 
+    <>
 
-return (
-  <>
-  <div className="content">
+      <NavBar />
 
-    
-  <div className="Content1">
-    <Menubar className="navbar" model={items} start={start} /> 
-          <div className="card">
-          <Card className="title" >
-            <h1>Wash Your Stress Away!</h1>
-          <p className="m-0">
-          Wash your stress away, one load at a time, 
-              because every laundry day is a fresh start.
+      <MessageFab />
+
+      <div className="content" style={{ marginTop: '2.9em' }}>
+
+        <div className="bannerCard">
+
+          <h1>Wash Your Stress Away!</h1>
+          <p>
+            Wash your stress away, one load at a time,
+            because every laundry day is a fresh start.
           </p>
-        </Card>
-        <div className="wave" >
-          
+
+        </div>
+
+        <Wave1 />
+
+      </div>
+
+      <div className="content2">
+
+        <div className="aboutContainer">
+
+          <div className='aboutLeft'>
+
+            <h1>About</h1>
+
+            <p className="m-2">
+              VSP Laundry Shop was founded in [Year] by a group of laundry enthusiasts who shared a
+              common vision: to provide a comprehensive and customer-centric laundry experience.
+              Their passion for laundry stemmed from the belief that doing laundry should be easy, efficient,
+              and accessible to everyone. With that aspiration, VSP Laundry Shop was born.
+            </p>
+
           </div>
+
+          <AboutRight />
+
         </div>
 
-        <div className="is-sticky">
+        <Wave2 />
 
-<input type="checkbox" id="click" />
-   <label for="click">
-   <i className="pi pi-comment"></i>
-   <i className="pis pi-times"></i>
-   </label>
-   <div className="wrapper">
-      <div class="head-text">
-         Let's chat? - Online
       </div>
-      <div className="chat-box">
-         <div className="desc-text">
-            Please fill out the form below to start chatting with the next available agent.
-         </div>
-         <form action="#">
-            <div className="field textarea">
-            <InputTextarea value={value} onChange={(e) => setValue(e.target.value)} rows={5} cols={30} placeholder="Explain your queries.." required/>
-            </div>
-            <div className="field">
-               <button type="submit">Start Chat</button>
-            </div>
-         </form>
-      </div>
-   </div>
- </div>
 
-  </div>
 
-  <div className="content2">
+      <div className="content3">
 
-    <div className="info">
-    <Card className='infocard'>
-      <h1>About</h1>
-    <p className="m-1">
-    VSP Laundry Shop was founded in [Year] by a group of laundry enthusiasts who shared a 
-              common vision: to provide a comprehensive and customer-centric laundry experience. 
-              Their passion for laundry stemmed from the belief that doing laundry should be easy, efficient, 
-              and accessible to everyone. 
-              With that aspiration, VSP Laundry Shop was born.
-    </p>
-    </Card>
-      </div>
-      <div className="rightcard">
-        <div className="rightcard2"></div>
+        <div className="faq">
+
+          <h1>FAQs</h1>
+
+          <Panel className='faqPanel' header="What are the services you offer?" style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </Panel>
+
+          <br />
+
+          <Panel className='faqPanel' header="What kind of items do you cater for washing?"  style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </Panel>
+
+          <br />
+
+          <Panel className='faqPanel' header="What are your opening hours?" style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </Panel>
+
+          <br />
+
+          <Panel className='faqPanel' header="How many days will I receive my items back?"  style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
+            <p className="m-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </Panel>
+
         </div>
-  </div>
- 
-      
-  <div className="content3">
-    <div className="wave2"/> 
-    <div className="faq">
-      <h1>Faqs</h1>
-      <Card className="field" title="What are the services you offer?">
-    <p className="m-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
-        numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-    </p>
-      </Card>
-      <br />
-      <Card className="field" title="What kind of items do you cater for washing?">
-          <p className="m-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
-              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-          </p>
-      </Card>
-      <br />
-      <Card className="field" title="What are your opening hours?">
-          <p className="m-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
-              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-          </p>
-      </Card>
-      <br />
-      <Card className="field" title="How many days will I receive my items back?">
-          <p className="m-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
-              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-          </p>
-      </Card>
-    </div> 
-   
-  </div> <div className="lastwave">
+
+        <Wave3 />
+
       </div>
 
       <div className="footnote">
         <h1>Vsp Laundry Shop</h1>
-          <h2>Quezon Street, Panabo City, Davao Region, 8105</h2>
-          <h2>Contact Number na wala ko kabalo</h2>
+        <h2>Quezon Street, Panabo City, Davao Region, 8105</h2>
+        <h2>Contact Number na wala ko kabalo</h2>
       </div>
 
-
-  
-  </div>
     </>
   )
 }

@@ -1,64 +1,108 @@
 import React, { useState, useEffect } from 'react'
-import NavBar from '../../components/NavBar'
+
+import NavBarAdmin from '../../components/NavBarAdmin'
+import AddOrderForm from '../../components/AddOrderForm';
+import OrderDesc from '../../components/OrderDesc';
+
+import { jobData } from '../../assets/jobData';
 
 import { DataTable } from 'primereact/datatable';
+import { Tag } from 'primereact/tag';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
+import { Dialog } from 'primereact/dialog';
 
 function Dashboard() {
 
+  const [job, setJob] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [visible, setVisible] = useState(false);
+  const [visible2, setVisible2] = useState(false);
+
   const header = (
-    <div className="flex flex-wrap align-items-center justify-content-between gap-2" style={{ minWidth: '50rem', padding: '0.4rem 2.1rem' }}>
-        <span className="text-xl text-900 font-bold" style={{fontSize: '1.6rem'}}>Job Orders</span>
-        <Button style={{float: 'right'}} label='Add Order' />
+
+    <div className="flex flex-wrap align-items-center justify-content-between gap-2" style={{ minWidth: '50rem', padding: '0.2rem 1.1rem' }}>
+
+      <span className="m-2" style={{ margin: 'auto 0rem', fontSize: '1.9rem' }}>Job Orders</span>
+      <Button style={{ float: 'right' }} label='Add Order' onClick={() => setVisible(true)} />
+
+      <Dialog header='Add Order' visible={visible} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible(false)}>
+        <AddOrderForm />
+      </Dialog>
+
     </div>
-);
+
+  );
+
+  useEffect(() => {
+    jobData.getJob().then(data => setJob(data));
+  }, []);
+
+  const statusBodyTemplate = (job) => {
+    return <Tag value={job.Status} severity={getSeverity(job)} style={{ fontSize: '1rem', fontWeight: '100', width: '4.5em' }}></Tag>;
+  };
+
+  const onRowSelect = (event) => {
+    <Dialog header='Job Order' visible={visible2} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible2(false)}>
+      <p>
+        {event.data.ID}
+      </p>
+    </Dialog>
+  };
+
+  const getSeverity = (job) => {
+
+    switch (job.Status) {
+      case 'Claimed':
+        return 'success';
+
+      case 'Ready':
+        return 'info';
+
+      case 'Drying':
+        return 'help';
+
+      case 'Washing':
+        return 'primary';
+
+      case 'Idle':
+        return 'warning';
+
+      case 'Lost':
+        return 'danger';
+
+      default:
+        return null;
+    }
+  };
 
   return (
+
     <>
-      <NavBar />
-      <div className="card" style={{ minWidth: '50rem', padding: '1.4rem 2.1rem' }}>
-        <DataTable header={header} tableStyle={{ minWidth: '50rem', padding: '1.4rem 2.1rem' }}>
-          <Column field="name" header="Job Order Number"></Column>
-          <Column field="price" header="Customer"></Column>
-          <Column field="category" header="Service"></Column>
-          <Column header="Status"></Column>
-        </DataTable>
+
+      <NavBarAdmin />
+
+      <div className='content1' style={{ marginTop: '2.9rem' }}>
+
+        <div className="tableCard">
+
+          <DataTable value={job} paginator rows={5} selectionMode="single" header={header} stripedRows sortMode="multiple"
+            selection={selectedProduct} onRowSelect={onRowSelect} onSelectionChange={(e) => setSelectedProduct(e.value)} 
+            tableStyle={{ height: '20rem' }}>
+
+            <Column field="ID" header="ID" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
+            <Column field="Service" header="Service" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
+            <Column field="Date_Received" header="Date Received" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
+            <Column field="Status" header="Status" body={statusBodyTemplate} alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
+
+          </DataTable>
+
+        </div>
+
       </div>
 
-      <div className="chatbox">
-
-   
-      <label for="click">
-      <i class="fab fa-facebook-messenger"></i>
-      <i class="pi pipi-times"></i>
-      </label>
-      <div class="wrapper">
-         <div class="head-text">
-            Let's chat? - Online
-         </div>
-         <div class="chat-box">
-            <div class="desc-text">
-               Please fill out the form below to start chatting with the next available agent.
-            </div>
-            <form action="#">
-               <div class="field">
-                 
-               </div>
-               <div class="field">
-
-               </div>
-               <div class="field textarea">
-                  <textarea cols="30" rows="10" placeholder="Explain your queries.." required></textarea>
-               </div>
-               <div class="field">
-                  <button type="submit">Start Chat</button>
-               </div>
-            </form>
-         </div>
-      </div>
-    </div>
     </>
+
   )
 }
 
