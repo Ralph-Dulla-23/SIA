@@ -478,27 +478,58 @@ form .textarea textarea:focus::placeholder {
 }
 
 
-
+/* inquiry */
 
 .inquiry {
     position: absolute;
-    margin: 4em 5.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 80vh; 
-    width: 90%;
+    width: 70%;
     display: flex; 
     background-color: #FFFFFF; 
     border-radius: 30px;
+    
+}
+
+.user{
+    margin: 3px 0;
+    padding: 10px 0 13px 0;
+}
+
+.user:hover{
+    background-color: rgb(0, 204, 255);
+    transition: ease-in-out .5s;
+}
+
+.user.active{
+    background-color: #38bdff;
+}
+
+.userpfp3{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #7881d0;
+    float: left;
+    margin: 5px 10px 0 10px;
+    
+}
+
+.search{
+    margin-bottom: 100px;
 }
 
 .allChats {
     position: relative;
     height: inherit;
-    width: 25%;
+    width: 45%;
     background-color: #ffffff;
     border: 1px solid #ececec;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-
+    
 }
 
 .chatBox {
@@ -513,8 +544,88 @@ form .textarea textarea:focus::placeholder {
     border-bottom-right-radius: 30px;
 }
 
+.chatname{
+    background-color: #d0d0d07b;
+    width: 100%;
+    height: 6em;
+    border-top-right-radius: 30px;
+    display: flex;
+    
+}
+
+.chatname h1{
+    padding: 30px 0 0 15px;
+    
+}
+
+
+
+.contactpfp{
+    width: 60px;
+    height: 60px;
+    background-color: #222fab;
+    border-radius: 30px;
+    margin: 17px 0 0 20px;
+    float: left;
+}
+
+.chatcontent{
+    font-size: 23px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    justify-content: space-around;
+}
+
+
+.contactchat{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contactpfp2{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #7881d0;
+    float: left;
+    margin: 0px 17px 0 20px;
+}
+
+.chatp p{
+    width: 500px;
+    padding: 20px;
+    background-color: #383a4a;
+    border-radius: 30px;
+}
+.userchat{
+    border-radius: 30px;
+    margin: 17px 0 0 0;
+    display: flex;
+}
+
+.userpfp{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #7881d0;
+    float: right;
+    margin: 0px 17px 0 20px;
+    gap: 20px;
+}
+
+.userchat p{
+    width: 500px;
+    padding: 20px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 30px;
+    margin: 0 10px 0 0;
+}
+
 .chatHistory {
-    height: 90%;
+    height: 40%;
 }
 
 
@@ -532,14 +643,15 @@ form .textarea textarea:focus::placeholder {
 
 
 .p-input-icon-left{
-    width: 18em;
+    width: 20em;
     height: 50px;
     border-radius: 30px;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .inputs textarea {
-    width: 90%;
+    width: 83.2%;
     height: inherit;
     border-radius: 30px;
     padding: 10px;
@@ -548,7 +660,7 @@ form .textarea textarea:focus::placeholder {
 
 .inputs Button {
     border-radius: 0;
-    width: 10%;
+    width: 15%;
     height: inherit;
     border-radius: 30px;    
 }
@@ -785,7 +897,7 @@ form .textarea textarea:focus::placeholder {
 }
 
 .content2 {
-    min-height: 70vh;
+    min-height: 90vh;
 }
 
 .content3 {
@@ -963,7 +1075,7 @@ form .textarea textarea:focus::placeholder {
 }
 
 .content2 {
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 .content3 {

@@ -11,7 +11,7 @@ export const staffData = {
             {
                 ID: '001',
                 Name: 'John Doe',
-                Job: 'Inquiry'
+                Job: 'Customer Service'
             },
             {
                 ID: '002',
