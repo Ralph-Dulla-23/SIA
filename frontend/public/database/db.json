@@ -1,0 +1,25 @@
+{
+    "user": [
+        {
+            "firstname": "Harold",
+            "lastname": "Ju",
+            "email": "432",
+            "password": "password1234",
+            "usertype": "Admin"
+        },
+        {
+            "firstname": "Ming",
+            "lastname": "Cooper",
+            "email": "sample02@email.com",
+            "password": "password0987",
+            "usertype": "Admin"
+        },
+        {
+            "firstname": "Kira",
+            "lastname": "Mertens",
+            "email": "sample09@email.com",
+            "password": "ShakirShakira",
+            "usertype": "User"
+        }
+    ]
+}
