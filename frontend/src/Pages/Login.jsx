@@ -24,7 +24,8 @@ function Login() {
 
           <Card className='credentials'>
 
-            <h1>Login</h1>
+            <div id="testing">
+            <h1 id='test'></h1></div>
 
             <div className="addPanel">
 
@@ -43,7 +44,7 @@ function Login() {
 
             <div className="loginButtons">
 
-              <Button className='loginb' label="Login"/>
+              <Button className='loginb' label="Login" id='loginB'/>
               <Button icon='pi pi-google' className='loginG' label="Login with Google"/>
 
             </div>
@@ -54,10 +55,13 @@ function Login() {
                 Dont have an account?  <a href='/Signin'>Signin</a>
               </h3>
 
+              
+              
+
             </div>
 
           </Card>
-
+        <script type="module" src="index.js"></script>
       </div>
 
     </>
