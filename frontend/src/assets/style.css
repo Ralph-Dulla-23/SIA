@@ -48,6 +48,7 @@
 .content,
 .content1,
 .content2,
+.content4,
 .content3 {
     position: relative;
     width: 100%;
@@ -208,15 +209,16 @@
 
 .serviceWrap {
     background-color: #7e6c6009;
-    margin: 2em;
+    margin: 2em 3em;
     backdrop-filter: blur(4px);
     border-radius: 1.1rem;
+    margin-bottom: 300px;
 }
 
 .stitle {
     margin: 0.75rem;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #f7f8fc;
     text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
 
@@ -228,7 +230,7 @@
     margin: 0.7rem;
     text-align: center;
     box-shadow: 0 0.2rem 1rem #5a6773a4;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .serviceCard p {
@@ -679,7 +681,7 @@ form .textarea textarea:focus::placeholder {
 
 /* Media Queries */
 /* 1080p */
-@media only screen and (max-width: 1980px) {
+@media only screen and (max-width: 1920px) {
     /* Fonts*/
 
 .m-1 {
@@ -719,7 +721,7 @@ form .textarea textarea:focus::placeholder {
 }
 
 .content2 {
-    min-height: 110vh;
+    min-height: 10vh;
 }
 
 .content3 {
@@ -809,44 +811,7 @@ form .textarea textarea:focus::placeholder {
     z-index: 3;
 }
 
-/* FAQ */
 
-.faq {
-    width: 65%;
-    margin: 0 auto;
-    padding: 2em 100px;
-    border-radius: 20px;
-    min-height: 90vh;
-    color: #383a4a;
-    background-color: aliceblue;
-    position: relative;
-}
-
-.faqPanel {
-    border-radius: 20px;
-}
-
-.faq h1 {
-    margin: 10px 10px;
-    text-align: center;
-    font-size: 3.6rem;
-    padding: 10px 0;
-}
-
-/* Footer*/
-
-.footnote {
-    height: 20vh;
-    padding: 2rem 0;
-    background-color: #222fab;
-    text-align: center;
-    align-items: justify;
-    color: white;
-}
-
-.footnote h2 {
-    font-weight: 200;
-}
 
 /* Wave */
 
@@ -857,7 +822,105 @@ form .textarea textarea:focus::placeholder {
 }
 }
 
-@media only screen and (max-width: 1367px) {
+@media only screen and (max-width: 1440px) {
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 5em 7em;
+}
+
+.aboutRight{
+    position: relative;    
+    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: .3em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 26em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 26em;
+    top: -1.5em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 20em;
+    width: 20em;
+    top: 4.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+    /* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1.1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+}
+
+@media only screen and (max-width: 1366px) {
     /* Fonts*/
 
 .m-1 {
@@ -865,7 +928,7 @@ form .textarea textarea:focus::placeholder {
 }
 
 .m-2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .m-3 {
@@ -987,52 +1050,7 @@ form .textarea textarea:focus::placeholder {
     z-index: 3;
 }
 
-/* FAQ */
 
-.faq {
-    width: 65%;
-    margin: 0 auto;
-    padding: 2em 100px;
-    border-radius: 20px;
-    min-height: 90vh;
-    color: #383a4a;
-    background-color: aliceblue;
-    position: relative;
-}
-
-.faqPanel {
-    border-radius: 20px;
-}
-
-.faq h1 {
-    margin: 10px 10px;
-    text-align: center;
-    font-size: 3.6rem;
-    padding: 10px 0;
-}
-
-/* Footer*/
-
-.footnote {
-    height: 20vh;
-    padding: 2rem 0;
-    background-color: #222fab;
-    text-align: center;
-    align-items: justify;
-    color: white;
-}
-
-.footnote h2 {
-    font-weight: 200;
-}
-
-/* Wave */
-
-.wave {
-    width: '100%';
-    position: 'absolute';
-    bottom: '0';
-}
 }
 
 @media only screen and (max-width: 1260px) {
@@ -1188,28 +1206,140 @@ form .textarea textarea:focus::placeholder {
     padding: 10px 0;
 }
 
-/* Footer*/
 
-.footnote {
-    height: 20vh;
-    padding: 2rem 0;
-    background-color: #222fab;
+}
+
+@media only screen and (max-width: 1024px) {
+        /* Fonts*/
+
+.m-1 {
+    font-size: 1rem;
+}
+
+.m-2 {
+    font-size: 2.7rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+.content {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 50vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.content2 {
+    min-height: 10vh;
+}
+
+.content3 {
+    min-height: 185vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+
+/* Banner */
+
+.bannerCard {
+    height: 400px;
+    width: 600px;
+    padding: 2.3em 2em;
+    margin: 200px 200px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 90px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 30px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 7.3em 10em;
+}
+
+.aboutRight{
+    position: relative;    
+    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
     text-align: center;
-    align-items: justify;
-    color: white;
+    font-size: 4.1rem;
 }
 
-.footnote h2 {
-    font-weight: 200;
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
 }
 
-/* Wave */
-
-.wave {
-    width: '100%';
-    position: 'absolute';
-    bottom: '0';
+.rightcard {
+    position: absolute;
+    height: 36em;
+    z-index: 1;
+    left: 5em;
 }
+
+.rightcard2 {
+    position: absolute;
+    height: 36em;
+    top: -1.5em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 25em;
+    width: 25em;
+    top: 4.8em;
+    left: 7.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
 }
 /*
 /* Extra small devices (phones, 600px and down) */

@@ -5,7 +5,7 @@ function Wave2() {
   return (
     
     <>
-    <img src={bwave} alt="wave2" style={{width:'100%', position:'absolute', bottom: '0'}}/>
+    <img src={bwave} alt="wave2" style={{width:'100%', position:'absolute', bottom: '0', margin: '-19em 0'}}/>
     </>
   )
 }
