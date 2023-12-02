@@ -90,7 +90,7 @@ function App() {
   const footer4 = (
     <>
       <Button label="Show More" onClick={() => setVisible4(true)} />
-      <Dialog header="Special Laundry" visible={visible4} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible4(false)}>
+      <Dialog header="Special Laundry" visible={visible4} style={{ width: '70vw' }} draggable={false} onHide={() => setVisible4(false)}>
         <p className="scard4">Back Pack</p>
         <p className="scard4">Sleeping Bag</p>
         <p className="scard4">Shoes Pair</p>
@@ -116,7 +116,7 @@ function App() {
       <div className="content" style={{ marginTop: '2.9em' }}>
 
         <div className="bannerCard">
-
+        
           <h1>Wash Your Stress Away!</h1>
           <p>
             Wash your stress away, one load at a time,

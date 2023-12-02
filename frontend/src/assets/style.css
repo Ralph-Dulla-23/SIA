@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
 @import url('https://db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=Noyh+R+W01+Medium');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@font-face {
+    font-family: "Noyh R W01 Medium";
+    src: url("./src/Font/Noyh R W01 Medium");
+}
 
-* {
+*{
     margin: 0;
     font-family: "Noyh R W01 Medium";
     box-sizing: border-box;
+   
 }
 
 /* NavBar */
@@ -18,6 +25,7 @@
     backdrop-filter: blur(0.65rem);
     justify-content: space-around;
     z-index: 4;
+    font-family: "Noyh R W01 Medium";
 }
 
 .navtext {
@@ -27,6 +35,7 @@
     margin-left: 1.7em;
     color: #383a4a;
     float: right;
+    font-family: "Noyh R W01 Medium";
 }
 
 /* Fonts*/
@@ -118,7 +127,7 @@
 .aboutLeft {
     width: 50%;
     color: #383a4a;
-    margin: auto 3.7em;
+    margin: auto 3em;
     box-shadow: none;
     padding: 1em 6em;
 }
@@ -685,11 +694,11 @@ form .textarea textarea:focus::placeholder {
     /* Fonts*/
 
 .m-1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .m-2 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
 }
 
 .m-3 {
@@ -714,7 +723,7 @@ form .textarea textarea:focus::placeholder {
 }
 
 .content1 {
-    min-height: 100vh;
+    min-height: 120vh;
     background: url('src/assets/images/Background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -729,6 +738,7 @@ form .textarea textarea:focus::placeholder {
     padding: 5.8em 0;
     background-color: #38bdff;
 }
+
 
 
 /* Banner */
@@ -764,7 +774,7 @@ form .textarea textarea:focus::placeholder {
 
 .aboutRight{
     position: relative;    
-    
+    margin: 0 3em;
 }
 
 .aboutLeft {
@@ -1003,13 +1013,13 @@ form .textarea textarea:focus::placeholder {
 
 .aboutRight{
     position: relative;    
-    
+    margin-left: -1em;
 }
 
 .aboutLeft {
     width: 50%;
     color: #383a4a;
-    margin: auto 1.7em;
+    margin: auto 1.5em;
     box-shadow: none;
     padding: 1em 2em;
 }
@@ -1049,6 +1059,46 @@ form .textarea textarea:focus::placeholder {
     box-shadow: 9.7px 6px #4dc5d8;
     z-index: 3;
 }
+
+    /* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 4rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
 
 
 }
@@ -1206,22 +1256,63 @@ form .textarea textarea:focus::placeholder {
     padding: 10px 0;
 }
 
+    /* Services */
+
+    .Services {
+        display: flex;
+        gap: 50px;
+        border-radius: 20px;
+        justify-content: center;
+    }
+    
+    .serviceWrap {
+        background-color: #7e6c6009;
+        margin: 2em 3em;
+        backdrop-filter: blur(4px);
+        border-radius: 1.1rem;
+        margin-bottom: 300px;
+    }
+    
+    .stitle {
+        margin: 0.75rem;
+        text-align: center;
+        font-size: 5rem;
+        color: #f7f8fc;
+        text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    
+    }
+    
+    .serviceCard {
+        width: 25rem;
+        height: 28rem;
+        margin: 0.7rem;
+        text-align: center;
+        box-shadow: 0 0.2rem 1rem #5a6773a4;
+        font-size: .9rem;
+        position: relative;
+    }
+    
+    .serviceCard p {
+        text-align: justify;
+    }
+    
+
 
 }
 
 @media only screen and (max-width: 1024px) {
-        /* Fonts*/
+ /* Fonts*/
 
 .m-1 {
     font-size: 1rem;
 }
 
 .m-2 {
-    font-size: 2.7rem;
+    font-size: 1.5rem;
 }
 
 .m-3 {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Containers */
@@ -1234,7 +1325,7 @@ form .textarea textarea:focus::placeholder {
     width: 100%;
 }
 .content {
-    min-height: 100vh;
+    min-height: 90vh;
     background: url('src/assets/images/Background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -1242,19 +1333,18 @@ form .textarea textarea:focus::placeholder {
 }
 
 .content1 {
-    min-height: 50vh;
+    min-height: 100vh;
     background: url('src/assets/images/Background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
 }
 
 .content2 {
-    min-height: 10vh;
+    min-height: 80vh;
 }
 
 .content3 {
-    min-height: 185vh;
+    min-height: 175vh;
     padding: 5.8em 0;
     background-color: #38bdff;
 }
@@ -1263,10 +1353,10 @@ form .textarea textarea:focus::placeholder {
 /* Banner */
 
 .bannerCard {
-    height: 400px;
-    width: 600px;
+    height: 190px;
+    width: 480px;
     padding: 2.3em 2em;
-    margin: 200px 200px;
+    margin: 150px 150px;
     background-color: #7e6c6028;
     color: #f7f8fc;
     text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
@@ -1276,19 +1366,148 @@ form .textarea textarea:focus::placeholder {
 }
 
 .bannerCard h1 {
-    font-size: 90px;
+    font-size: 40px;
 }
 
 .bannerCard p {
     padding: 0.57em 3em 0.57em 0;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* About */
 
 .aboutContainer {
     display: flex;
-    margin: 7.3em 10em;
+    margin: 3.3em 3em;
+}
+
+.aboutRight{
+    position: relative;    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto .7em;
+    box-shadow: none;
+    padding: 1em 2em;
+    margin-left: 70px;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.aboutLeft p {
+    padding: -20px;
+    text-align: justify;
+    font-size: -20px;
+}
+
+.rightcard {
+    position: absolute;
+    height: 21em;
+    z-index: 1;
+    left: 5em;
+    margin-top: 30px;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 21em;
+    top: -10px;
+    left: 7em;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 13em;
+    width: 13em;
+    top: 7.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* FAQ */
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    padding: 2em 100px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+    /* Services */
+
+    .Services {
+        display: flex;
+        gap: 50px;
+        border-radius: 20px;
+        justify-content: center;
+    }
+    
+    .serviceWrap {
+        background-color: #7e6c6009;
+        margin: 2em 3em;
+        backdrop-filter: blur(4px);
+        border-radius: 1.1rem;
+        margin-bottom: 300px;
+    }
+    
+    .stitle {
+        margin: 0.75rem;
+        text-align: center;
+        font-size: 3rem;
+        color: #f7f8fc;
+        text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    
+    }
+    
+    .serviceCard {
+        width: 25rem;
+        height: 28rem;
+        margin: 0.7rem;
+        text-align: center;
+        box-shadow: 0 0.2rem 1rem #5a6773a4;
+        font-size: .7rem;
+        position: relative;
+    }
+    
+    .serviceCard p {
+        text-align: justify;
+    }
+    
+
+
+}
+
+
+@media only screen and (max-width: 1440px) {
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 5em 7em;
 }
 
 .aboutRight{
@@ -1310,20 +1529,20 @@ form .textarea textarea:focus::placeholder {
 }
 
 .aboutLeft p {
-    padding: 1em;
+    padding: .3em;
     text-align: justify;
 }
 
 .rightcard {
     position: absolute;
-    height: 36em;
+    height: 26em;
     z-index: 1;
     left: 5em;
 }
 
 .rightcard2 {
     position: absolute;
-    height: 36em;
+    height: 26em;
     top: -1.5em;
     left: 7em;
     z-index: 2;
@@ -1332,15 +1551,252 @@ form .textarea textarea:focus::placeholder {
 .aboutPic {
     position: absolute;
     border-radius: 50%;
-    height: 25em;
-    width: 25em;
+    height: 20em;
+    width: 20em;
     top: 4.8em;
-    left: 7.8em;
+    left: 6.8em;
     box-shadow: 9.7px 6px #4dc5d8;
     z-index: 3;
 }
 
+    /* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
 }
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1.1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+/* Fonts */
+.m-1 {
+    font-size: 1rem;
+}
+
+.m-2 {
+    font-size: 1rem;
+}
+
+.m-3 {
+    font-size: 1.5rem;
+}
+
+/* Containers */
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    min-height: 60vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+    background-attachment: fixed; /* Fixed background */
+    overflow-x: hidden;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 110vh;
+}
+
+.content3 {
+min-height: 185vh;
+padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+/* Banner */
+.bannerCard {
+    height: 240px;
+    width: 100vw;
+    margin: 50px 0px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    box-shadow: none;
+    position: relative;
+    border-radius: 0px;
+}
+
+.bannerCard h1 {
+    font-size: 10vw; /* Relative font size */
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 4.5vw; /* Relative font size */
+}
+
+/* About */
+.aboutContainer {
+    display: flex;
+    margin: 7.3em 0; /* Adjusted margin */
+    flex-direction: column;
+    
+}
+
+.aboutRight {
+    position: relative;
+}
+
+.aboutLeft {
+    width: 100%; /* Full width on small screens */
+    color: #383a4a;
+    margin: auto;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 20em;
+    z-index: 1;
+   margin: 0 auto;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 20em;
+    top: -1.5em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+    top: 3.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* Services */
+.Services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjusted gap */
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 1em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 30px; /* Adjusted margin */
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 9vw; /* Relative font size */
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+}
+
+.serviceCard {
+    width: 90%;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+/* FAQ */
+
+.faq {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 20px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+.footnote{
+    font-size: 15px;
+}
+
+}
+
+
+
+
+
 /*
 /* Extra small devices (phones, 600px and down) */
 /*
