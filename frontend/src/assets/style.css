@@ -2063,6 +2063,7 @@ form .textarea textarea:focus::placeholder {
     background-color: rgb(255, 255, 255);
     padding: 1rem 0;
     position: relative;
+    border-radius: 0;
 }
 
 .credentials h1 {
