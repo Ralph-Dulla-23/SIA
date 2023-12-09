@@ -20,12 +20,12 @@ function Login() {
 
       <NavBar />
 
-      <div className="content" style={{ marginTop: '2.9rem'}}>
+      <div className="content" id='cardcredentials'>
 
           <Card className='credentials'>
 
             <div id="testing">
-            <h1 id='test'></h1></div>
+            <h1 id='test'>Login</h1></div>
 
             <div className="addPanel">
 
@@ -62,6 +62,8 @@ function Login() {
 
           </Card>
         <script type="module" src="index.js"></script>
+
+        
       </div>
 
     </>
