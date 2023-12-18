@@ -6,14 +6,41 @@ import { InputText } from 'primereact/inputtext';
 import { Card } from 'primereact/card';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
+import { useNavigate } from 'react-router-dom';
 
 
 function Login() {
 
-  const [value, setValue] = useState('');
-  const [nameValue, setName] = useState('');
-  const [passwordValue, setPassword] = useState('');
+  const navigate = useNavigate();
+  const handleLoginToDashboard = () => navigate('/Dashboard');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
+  function handleLogin ( event ) {
+    event.preventDefault();
+    let userData = { user: username, password: password };
+    //fetch( '/api/login', {
+    fetch( '/api/auth', {
+      method: 'post',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify ( userData )
+    })
+    .then ( response => response.json() )
+    .then ( data => {console.log( data );
+                    Test(data.login, data.usertype);
+                  })
+    
+    console.log( "clicked login" )
+
+    
+  }
+
+  function Test(login, usertype){
+    if(login===true){
+      handleLoginToDashboard();
+    }
+  }
+  
   return (
 
     <>
@@ -29,7 +56,8 @@ function Login() {
 
             <div className="addPanel">
 
-              <InputText id="username" placeholder='Email Address'aria-describedby="username-help" />
+              <InputText id="username" placeholder='Email Address'aria-describedby="username-help" 
+               onChange={(e) => setUsername(e.target.value)} />
             
             </div>
 
@@ -37,14 +65,14 @@ function Login() {
 
               <Password inputStyle={{ width: "100%" }}
                 id="password" placeholder='Password'
-                value={value} onChange={(e) => setValue(e.target.value)} feedback={false}
+                value={password} onChange={(e) => setPassword(e.target.value)} feedback={false}
                 toggleMask />
            
             </div>
 
             <div className="loginButtons">
 
-              <Button className='loginb' label="Login" id='loginB'/>
+              <Button className='loginb' label="Login" id='loginB'  onClick={handleLogin}/>
               <Button icon='pi pi-google' className='loginG' label="Login with Google"/>
 
             </div>

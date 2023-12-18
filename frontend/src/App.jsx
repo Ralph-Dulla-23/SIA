@@ -5,8 +5,6 @@ import Rush from './assets/images/RushLaundry.jpg'
 import DryClean from './assets/images/DryClean.jpeg'
 import Special from './assets/images/SpecialLaundry.jpg'
 
-
-
 import NavBar from './components/NavBar';
 import MessageFab from './components/MessageFab';
 
